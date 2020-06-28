@@ -62,6 +62,13 @@ For any absence, it is the student’s responsibility to inquire with classmates
 for notes, make up any exercises completed in class, and to complete impending
 assignments.
 
+SPRING SHOWCASE 
+
+Apart from our regular class meetings, participation in the 
+virtual showcase on Friday, August 14th 10-4pm
+is required. Our class will have an hour 
+during which each student will present their project. Attendance is mandatory.
+
 DISTRACTIONS
 
 Using a cellphone or laptop in class for purposes other than classwork is not
@@ -289,6 +296,6 @@ Homework (due August 14)
 - Final project perfect for showcase
 - Practice, practice!
 
-Jacobs Summer 2020 Design Showcase Friday, August 14th 10-4pm
+#### Jacobs Summer 2020 Design Showcase Friday, August 14th 10-4pm
 
 

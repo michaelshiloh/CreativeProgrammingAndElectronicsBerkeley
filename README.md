@@ -16,6 +16,8 @@ All course materials will be found on this Github repository
 * tina_piracci@berkeley.edu
 * Office hours: TBA
 
+* Course site: https://github.com/michaelshiloh/CreativeProgrammingAndElectronicsBerkeley
+
 [Syllabus](syllabus.md)
 
 [Course Outline](courseOutline.md)

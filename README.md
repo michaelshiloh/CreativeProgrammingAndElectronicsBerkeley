@@ -3,20 +3,20 @@
 All course materials will be found on this Github repository
 
 ### Details 
-* Session: D
-* July 6 - August 14 (six weeks)
-* Monday 9am-12:30pm
-* Wednesday 9am-1:00pm
+- Session: D
+- July 6 - August 14 (six weeks)
+- Monday 9am-12:30pm
+- Wednesday 9am-1:00pm
 
-* Instructor: Michael Shiloh 
-* shiloh@berkeley.edu
-* Office hours: email me to set up appointment
+- Instructor: Michael Shiloh 
+- shiloh@berkeley.edu
+- Office hours: email me to set up appointment
 
-* GSI: Tina Piracci 
-* tina_piracci@berkeley.edu
-* Office hours: TBA
+- GSI: Tina Piracci 
+- tina_piracci@berkeley.edu
+- Office hours: TBA
 
-* Course site: https://github.com/michaelshiloh/CreativeProgrammingAndElectronicsBerkeley
+- Course site: https://github.com/michaelshiloh/CreativeProgrammingAndElectronicsBerkeley
 
 [Syllabus](syllabus.md)
 

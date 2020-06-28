@@ -139,14 +139,14 @@ what’s to be included, etc.
 
 REQUIRED MATERIALS
 
-Before class starts, prepare
-**all** of these materials as well as a clear, well-lit space to work.
+Before class starts, prepare **all** of these materials:
 
 - Electronics kit
 - Laptop on which you have permission to install software
 - Laptop charger 
 - A notebook or sketchbook for taking notes and drawing ideas, even if you
 	take notes on your laptop
+- A clear, well-lit space to work
 
 Required and suggested readings will be provided as PDFs on the course site –
 there is no required textbook.

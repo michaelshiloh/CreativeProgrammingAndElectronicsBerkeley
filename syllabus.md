@@ -1,20 +1,21 @@
 ## Welcome to DES INV 23: Creative Programming and Electronics
 
 ### Details 
-* Session: D
-* July 6 - August 14 (six weeks)
-* Monday 9am-12:30pm
-* Wednesday 9am-1:00pm
 
-* Instructor: Michael Shiloh
-* shiloh@berkeley.edu
-* Office hours: email me to set up appointment
+- Session: D
+- July 6 - August 14 (six weeks)
+- Monday 9am-12:30pm
+- Wednesday 9am-1:00pm
 
-* GSI: Tina Piracci
-* tina_piracci@berkeley.edu
-* Office hours: TBA
+- Instructor: Michael Shiloh
+- shiloh@berkeley.edu
+- Office hours: email me to set up appointment
 
-* Course site: https://github.com/michaelshiloh/CreativeProgrammingAndElectronicsBerkeley
+- GSI: Tina Piracci
+- tina_piracci@berkeley.edu
+- Office hours: TBA
+
+- Course site: https://github.com/michaelshiloh/CreativeProgrammingAndElectronicsBerkeley
 
 
 ### This page: Syllabus
@@ -61,6 +62,23 @@ for attendance, you must arrive on time. No late assignments will be accepted.
 For any absence, it is the student’s responsibility to inquire with classmates
 for notes, make up any exercises completed in class, and to complete impending
 assignments.
+
+ZOOM
+
+This course will be delivered online using Zoom. If no one in class
+objects, meetings will be recorded so that students can review material
+at their leisure. 
+
+During meetings, I expect your cameras to be turned on.
+Your facial expressions are important feedback for me to know whether
+you are understanding the material. Furthermore, sharing our
+faces is a sign of mutual respect.
+If there are extenuating circumstances that prevent you from 
+turning on your camera, you must state your reason to me in an email 
+in advance, and receive an acknowledgment from me.
+
+Students who leave their cameras off without permission
+will be marked as absent.
 
 SPRING SHOWCASE 
 

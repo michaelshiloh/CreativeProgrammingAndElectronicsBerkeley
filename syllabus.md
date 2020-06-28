@@ -31,9 +31,9 @@ unknown.
 Over the course of the semester, you will learn how to write code and build
 electronics for a series of art machine projects, including robotic
 instruments, kinetic sculptures, and interactive installations. We will
-primarily be using the Arduino, an open-source library and integrated
+be using the Arduino, an open-source library and integrated
 development environment (IDE) built for makers—students, hobbyists, artists,
-programmers, and professionals—while briefly exploring Processing, another
+programmers, and professionals; and Processing, another
 creative software, as a tool for augmenting the physical world with digital
 information.
 
@@ -87,6 +87,30 @@ virtual showcase on Friday, August 14th 10-4pm
 is required. Our class will have an hour 
 during which each student will present their project. Attendance is mandatory.
 
+ASSISTANCE
+
+If you are not familiar with this material, you might find it
+frustrating at first. Finding problems in programs and electronics circuits
+is like trying to solve a detective mystery by following clues, 
+but the program or circuit will give you clues only when you ask
+very simple questions to which you will get very literal answers. 
+Computers and electronics only understand what you tell them, 
+not what you mean. But don't feel bad, we all started the same way.
+Even professional programmers spend more time trying to fix their 
+own problems than writing the programs in the first place.
+The only reason I'm good at finding your problems is that I've 
+made them all myself, many times.
+
+Fortunately, there are many ways to get help:
+
+1. We have set up an online community for students and faculty (TBA) 
+and this should be the first place to ask a question 
+because one of your fellow students may have an answer before the
+professor or GSI responds
+1. We are fortunate to have a GSI (TBA)
+1. Your professor welcomes questions by email at any time, although
+answers may not be immediate depending on the time.
+
 DISTRACTIONS
 
 Using a cellphone or laptop in class for purposes other than classwork is not
@@ -115,7 +139,8 @@ what’s to be included, etc.
 
 REQUIRED MATERIALS
 
-Please have these materials on hand every day before class starts
+Before class starts, prepare
+**all** of these materials as well as a clear, well-lit space to work.
 
 - Electronics kit
 - Laptop on which you have permission to install software
@@ -184,6 +209,7 @@ Homework (due July 8)
 - Self portrait
 -	fix Arduino driver problems
 - Readings (TBA)
+- Carefully cut the ziptie on the bundle of jumper wires in the kit
 
 #### Meeting 2: July 8
 

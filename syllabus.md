@@ -54,10 +54,14 @@ This course contains a great deal of technical material and creative
 information, and because our process of experimentation and critique is
 collaborative, attendance is mandatory. You are allowed two absences for the
 semester without penalty (except critique days and design showcase); – each
-additional absence will result zero credit for the missed studio.  To receive
-an additional excused absence, you must ask in advance, and receive an
-acknowledgment from the instructor. Excusable absences include family
-emergencies, job interviews, and presenting at a conference. To receive credit
+additional absence will result in zero credit for the missed session.  
+
+To receive an additional excused absence, you must ask in advance, and receive
+an acknowledgment from the instructor. Excusable absences include family
+emergencies, job interviews, vastly different time zones, and presenting at a
+conference. 
+
+To receive credit
 for attendance, you must arrive on time. No late assignments will be accepted.
 For any absence, it is the student’s responsibility to inquire with classmates
 for notes, make up any exercises completed in class, and to complete impending
@@ -80,7 +84,7 @@ in advance, and receive an acknowledgment from me.
 Students who leave their cameras off without permission
 will be marked as absent.
 
-SPRING SHOWCASE 
+SUMMER SHOWCASE 
 
 Apart from our regular class meetings, participation in the 
 virtual showcase on Friday, August 14th 10-4pm
@@ -108,8 +112,17 @@ and this should be the first place to ask a question
 because one of your fellow students may have an answer before the
 professor or GSI responds
 1. We are fortunate to have a GSI (TBA)
+1. Jacobs Hall Design Specialist [office hours](https://jacobsinstitute.berkeley.edu/our-space/design-specialists/)
 1. Your professor welcomes questions by email at any time, although
 answers may not be immediate depending on the time.
+
+RESPONSIBILITY
+
+This program is very generous in the multitude of assistance available,
+but it is your responsibility to seek this assistance if you need help. If you
+are traditionally shy about asking for help, consider this an opportunity to
+develop this very important skill. This skill is important not only for this
+course, but for your entire future.
 
 DISTRACTIONS
 

@@ -13,7 +13,7 @@
 
 - GSI: Tina Piracci
 - tina_piracci@berkeley.edu
-- Office hours: TBA
+- Office hours: **TBA**
 
 - Course site: https://github.com/michaelshiloh/CreativeProgrammingAndElectronicsBerkeley
 
@@ -58,8 +58,8 @@ additional absence will result in zero credit for the missed session.
 
 To receive an additional excused absence, you must ask in advance, and receive
 an acknowledgment from the instructor. Excusable absences include family
-emergencies, job interviews, vastly different time zones, and presenting at a
-conference. 
+emergencies, job interviews, vastly different time zones, presenting at a
+conference, and poor internet connectivity.
 
 To receive credit
 for attendance, you must arrive on time. No late assignments will be accepted.
@@ -69,9 +69,13 @@ assignments.
 
 ZOOM
 
-This course will be delivered online using Zoom. If no one in class
-objects, meetings will be recorded so that students can review material
-at their leisure. 
+This course will be delivered online using Zoom. 
+
+* Lectures will be recorded for students unable to attend live lectures
+* These recordings are only viewable by class members
+* Students can watch these recordings later as reference material, 
+but may not extract pieces of them for any purpose
+* These recordings will be deleted on **TBA**
 
 During meetings, I expect your cameras to be turned on.
 Your facial expressions are important feedback for me to know whether
@@ -107,14 +111,18 @@ made them all myself, many times.
 
 Fortunately, there are many ways to get help:
 
-1. We have set up an online community for students and faculty (TBA) 
+1. We have set up an online community for students and faculty (**TBA**) 
 and this should be the first place to ask a question 
 because one of your fellow students may have an answer before the
 professor or GSI responds
-1. We are fortunate to have a GSI (TBA)
+1. We are fortunate to have a GSI (**TBA**)
 1. Jacobs Hall Design Specialist [office hours](https://jacobsinstitute.berkeley.edu/our-space/design-specialists/)
 1. Your professor welcomes questions by email at any time, although
 answers may not be immediate depending on the time.
+1.  At least two of the Jacobs Hall Design Fellows
+(Eric Weinhoffer and Zahin Ali) are holding office hours over the
+summer). The website doesn't reflect this yet, but will be udpated on Monday
+and the details will be added here.
 
 RESPONSIBILITY
 
@@ -188,13 +196,109 @@ Homework: 30%
 Midterm project: 20%
 Final project: 30%
 
-PRONOUNS
+**Inclusion**
 
-As this course includes lots of interaction between students, it’s important
-for us to create an environment of inclusion and mutual respect. This includes
-the ability for all students to have their chosen gender pronouns and chosen
-name affirmed. If the class roster does not align with your name and/or
-pronouns, please inform me of the necessary change.
+We are committed to creating a learning environment welcoming of all students
+that supports a diversity of thoughts, perspectives and experiences, and
+respects your identities and backgrounds (including race/ethnicity,
+nationality, gender, class, sexual orientation, gender identity, religion,
+ability, etc.) To help accomplish this: 
+
+- If you have a name and/or set of
+pronouns that differ from those that appear in your official records, please
+let me know, either in class or privately
+- If you feel like your performance in the class is being
+impacted by your experiences inside *or outside* of class 
+(e.g., family matters, current
+events), please don’t hesitate to reach out to me or your GSI 
+or someone else from the Jacobs staff.
+We want to be resources for you.  
+- We (like many people) are still in the process of
+learning about diverse perspectives and identities. 
+If something was said in class **by anyone** that made you feel uncomfortable, 
+please talk to one of us about it. 
+You may also contact the engineering department’s 
+Faculty Equity Advisor Prof. (**TBA**) (email).  
+- As a participant in this class, please strive to respect the
+diversity of your classmates.  
+
+ACCOMMODATIONS FOR STUDENTS WITH DISABILITIES
+
+All students are welcome here, regardless of race, orientation, disabilities,
+and many other differences.
+Students with disabilities who have a Letter of Accommodation (LOA) 
+should contact me immediately to discuss their
+disability-related academic needs. 
+
+Disabled students who do not yet have an LOA must contact 
+the Disabled Students' Program (DSP) 
+to request an appropriate LOA addressed to me. I am not permitted to 
+make any accommodations without this LOA.
+
+The Disabled Students' Program (DSP) is a campus department that works to
+ensure that all students with disabilities have equal access to educational
+opportunities at UC Berkeley. 
+
+OTHER ACCOMMODATIONS
+
+If you need religious or other accommodations in this class, 
+or if you have emergency medical information you wish to share with us, 
+please  let one of us know.
+
+COUNSELING AND PSYCHOLOGICAL SERVICES
+
+The main University Health Services Counseling and Psychological Services
+staff is located at the Tang Center (http://uhs.berkeley.edu; 2222 Bancroft
+Way; 642-9494) and provides confidential assistance to students managing
+problems that can emerge from illness such as financial, academic, legal,
+family concerns, and more.
+
+The Care Line (PATH to Care Center)
+
+The Care Line (510-643-2005; https://care.berkeley.edu/care-line/) is a 24/7,
+confidential, free, campus-based resource for urgent support around sexual
+assault, sexual harassment, interpersonal violence, 
+stalking, and invasion of sexual privacy. 
+The Care Line will connect you with a confidential advocate for
+trauma-informed crisis support including time-sensitive information, 
+securing urgent safety resources, 
+and accompaniment to medical care or reporting.
+
+OMBUDSPERSON FOR STUDENTS
+
+The Ombudsperson for Students (102 Sproul Hall; 642-5754;
+http://students.berkeley.edu/Ombuds) provides a confidential service for
+students involved in a University-related problem (academic or
+administrative), acting as a neutral complaint resolver and not as an advocate
+for any of the parties involved in a dispute. The Ombudsman can provide
+information on policies and procedures affecting students, facilitate
+students' contact with services able to assist in resolving the problem, and
+assist students in complaints concerning improper application of University
+policies or procedures. All matters referred to this office are held in strict
+confidence. The only exceptions, at the sole discretion of the Ombudsman, are
+cases where there appears to be imminent threat of serious harm.
+
+CONDUCT
+
+Berkeley honor code
+
+Everyone in this class is
+expected to adhere to this code: “As a member of the UC Berkeley community, I
+act with honesty, integrity, and respect for others.” 
+
+Academic honesty
+
+You are encouraged to form study groups and work together to
+understand course material, but all written work as well as responses to
+in-class questions should be your own, unless the work is assigned as a group 
+project. You may not copy other students’ work.
+
+Academic integrity and ethical conduct are of utmost importance in the College
+of Engineering and at U.C. Berkeley.  
+
+LAND ACKNOWLEDGEMENT 
+
+We recognize that in 1868, UC Berkeley was established on Huichin Ohlone land.
 
 COURSE CALENDAR
 

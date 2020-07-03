@@ -231,7 +231,8 @@ should contact me immediately to discuss their
 disability-related academic needs. 
 
 Disabled students who do not yet have an LOA must contact 
-the Disabled Students' Program (DSP) 
+the Disabled Students' Program (DSP) at
+510-642-0518 or [http://dsp.berkeley.edu](http://dsp.berkeley.edu) 
 to request an appropriate LOA addressed to me. I am not permitted to 
 make any accommodations without this LOA.
 
@@ -250,7 +251,7 @@ COUNSELING AND PSYCHOLOGICAL SERVICES
 The main University Health Services Counseling and Psychological Services
 staff is located at the Tang Center (http://uhs.berkeley.edu; 2222 Bancroft
 Way; 642-9494) and provides confidential assistance to students managing
-problems that can emerge from illness such as financial, academic, legal,
+problems that can emerge from illness, financial, academic, legal,
 family concerns, and more.
 
 The Care Line (PATH to Care Center)

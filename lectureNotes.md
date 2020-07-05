@@ -55,6 +55,7 @@ No background needed, strong DIY attitude</li>
  	<li>
 Low barrier to entry, high ceiling</li>
 </ul>
+
 Examples
 - [Ars Electronica](https://ars.electronica.art/prix/en/winners/)    
 - [Lee Blalock](https://refreshart.tech/lee-blalock)    

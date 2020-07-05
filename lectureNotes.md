@@ -56,10 +56,10 @@ No background needed, strong DIY attitude</li>
 Low barrier to entry, high ceiling</li>
 </ul>
 - Examples
-	- [Ars Electronica](https://ars.electronica.art/prix/en/winners/)
-	- [Lee Blalock](https://refreshart.tech/lee-blalock)
+	- [Ars Electronica](https://ars.electronica.art/prix/en/winners/)  
+	- [Lee Blalock](https://refreshart.tech/lee-blalock)  
   - [Huge
-		list](https://docs.google.com/document/d/1JH52kQ0aMqtg4TvjWd1ezGRBsgzvBk0-tet4S7pC0Gs/)
+		list](https://docs.google.com/document/d/1JH52kQ0aMqtg4TvjWd1ezGRBsgzvBk0-tet4S7pC0Gs/)  
 <ul>
  	<li>Carlos Guedes' wonderful <a href="https://vimeo.com/235763130">Phobos</a>, Orquestra Robótica Disfuncional;(1 min)</li>
  	<li>Sudhu Tewari's <a href="https://www.youtube.com/watch?v=MjNB3nKPMb8" >Yasmin Electro Mechanical Sequencer</a></li>

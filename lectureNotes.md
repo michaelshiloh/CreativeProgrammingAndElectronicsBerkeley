@@ -1,6 +1,6 @@
 ## Welcome to DES INV 23: Creative Programming and Electronics
 
-### Details 
+#### Details 
 
 - Session: D
 - July 6 - August 14 (six weeks)

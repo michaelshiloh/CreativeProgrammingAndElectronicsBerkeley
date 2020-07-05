@@ -67,6 +67,7 @@ For any absence, it is the student’s responsibility to inquire with classmates
 for notes, make up any exercises completed in class, and to complete impending
 assignments.
 
+
 ZOOM
 
 This course will be delivered online using Zoom. 
@@ -87,6 +88,14 @@ in advance, and receive an acknowledgment from me.
 
 Students who leave their cameras off without permission
 will be marked as absent.
+
+
+PARTICIPATION
+
+Please speak up in class! It's especially important on Zoom. Since I can't
+see your faces, I don't know if what I'm saying makes sense. Ask questions,
+make comments, give me feedback, make jokes. Remember that your
+participation is being graded!
 
 SUMMER SHOWCASE 
 
@@ -111,11 +120,13 @@ made them all myself, many times.
 
 Fortunately, there are many ways to get help:
 
-1. We have set up an online community for students and faculty (**TBA**) 
-and this should be the first place to ask a question 
+1. We have set up a [Slack workspace](https://join.slack.com/t/des-inv-23summer2020/shared_invite/zt-frlwrm41-IbyM0vdumrIgBSwLNNYdWA)
+	for this class. Please join.
+This should be the first place to ask a question 
 because one of your fellow students may have an answer before the
 professor or GSI responds
-1. We are fortunate to have a GSI (**TBA**)
+1. We are fortunate to have a GSI who will have scheduled office hours (TBA)
+and will also be available via email.
 1. Jacobs Hall Design Specialist [office hours](https://jacobsinstitute.berkeley.edu/our-space/design-specialists/)
 1. Your professor welcomes questions by email at any time, although
 answers may not be immediate depending on the time.
@@ -304,8 +315,12 @@ We recognize that in 1868, UC Berkeley was established on Huichin Ohlone land.
 COURSE CALENDAR
 
 Please note this is subject to change – be sure to check this page and your
-email regularly. Homework and readings are listed for the days they are
+email regularly. 
+
+Homework and readings are listed for the days they are
 assigned, with the due date indicated
+
+Lecture notes are in [this](lectureNotes.md) file.
 
 #### Meeting 1: July 6
 
@@ -320,14 +335,57 @@ Activity
 	- Primitive shapes
 	- Programming concepts
 	- Variables
-	- Built-in variables (width, heigh)
+	- Built-in variables (width, height)
 	- Static vs. active mode
 
 Homework (due July 8)
-- Self portrait
--	fix Arduino driver problems
-- Readings (TBA)
-- Carefully cut the ziptie on the bundle of jumper wires in the kit
+
+Email Assignment:
+
+- Email me a link to your Github repository. Remember the difference
+between a repository and an account.
+
+Preparation Assignment, if you have have received your kit:
+
+- If you had problems uploading the sketch,
+use one of the assistants methods to resolve this
+- Carefully cut the cable tie that holds the bundle of jumper wires together.
+Be very careful not to cut the wires
+or yourself.
+
+Reading Assignment:
+
+- Read [Getting Started with
+	Processing](https://processing.org/tutorials/gettingstarted)
+- Read [Coordinate systems and
+	space](https://processing.org/tutorials/drawing)
+
+Production Assignment:
+
+- Using what we've learned in Processing, create a simple 
+	self portrait of yourself in an environment that is meaningful to you.
+	The purpose of this exercise is to practice what we've learned, and
+	not to test your artistic skills, so it doesn't really matter how
+	good it is.
+	- The portrait must be entirely created by your code i.e. you must not interact with your computer while the portrait is being made (e.g. no drawing using the mouse)
+	- The portrait does not need to be dynamic (i.e. it does not need to change while we look at it) 
+	- The portrait does not need to be realistic. The purpose is to practice
+	using the simple drawing functions, and for us to get to know each other
+	a little bit better.
+- In your Github repository, create a new folder named ````July 8````
+	- Upload your program into the new folder, with the extension ````.pde````. 
+	Your
+program should be well commented and organized. If you use any variables,
+chose good names.
+	- Upload a screenshot of your portrait into the new folder
+	- Create a ````README.md```` 
+	in the new folder and include your screenshot in 
+	the ````README.md````.
+	- Describe what the environment is supposed to be and 
+	why it is important to you
+	- Write a short description of any difficulties you had or anything
+interesting you discovered.
+
 
 #### Meeting 2: July 8
 

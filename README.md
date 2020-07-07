@@ -18,13 +18,10 @@ All course materials will be found on this Github repository
 
 - Course site: https://github.com/michaelshiloh/CreativeProgrammingAndElectronicsBerkeley
 
-[Syllabus](syllabus.md)
-
-[Course Outline](courseOutline.md)
+[Syllabus](syllabus.md), which includes course outline and all homework
+assignments
 
 [Lecture notes](lectureNotes.md)
-
-[Assignments](assignments.md)
 
 Student Github [repositories](studentGithubRepositories.md)
 

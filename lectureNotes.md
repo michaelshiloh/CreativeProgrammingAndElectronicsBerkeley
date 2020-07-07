@@ -1,5 +1,7 @@
 ## Welcome to DES INV 23: Creative Programming and Electronics
 
+Shortcut to [Today's lecture](#todays-lecture)
+
 #### Details 
 
 - Session: D
@@ -22,10 +24,7 @@
 <h1>This document: Lecture Notes</h1>
 This is all subject to change
 
-[Today's lecture](#todays-lecture)
 
-
-### todays-lecture
 ### 06 July 2020
 
 #### Administration
@@ -35,8 +34,7 @@ This is all subject to change
 - Download [Processing](https://processing.org/download/)
 - Introductions: me, Tina, you
 - Syllabus etc.
-- Join our [Slack
-	workspace](https://join.slack.com/t/des-inv-23summer2020/shared_invite/zt-frlwrm41-IbyM0vdumrIgBSwLNNYdWA)
+- Join our Slack workspace. Email me or Tina for the link.
 
 #### What’s the class about?
 
@@ -58,7 +56,7 @@ Low barrier to entry, high ceiling</li>
 
 Examples
 - [Ars Electronica](https://ars.electronica.art/prix/en/winners/)    
-- [Lee Blalock](https://refreshart.tech/lee-blalock)    
+- [Lee Blalock](http://www.leeblalock.com/shrine.html)
 - [Huge
 list](https://docs.google.com/document/d/1JH52kQ0aMqtg4TvjWd1ezGRBsgzvBk0-tet4S7pC0Gs/)    
 <ul>
@@ -210,9 +208,6 @@ arc(100, 100, 100, 100, 0, arcSizeInRadians, CHORD);
 */
 ````
 
-
----------------------------------
-	
 #### Animation
 - `draw()`
 - `setup()`
@@ -239,6 +234,27 @@ the difference?
 
 Static vs. active mode
 
+
+### todays-lecture
+### 08 July 2020
+
+#### Administration
+
+- Who is not on Slack?
+- Who is missing from Github?
+
+Plan for today
+
+- Review
+- Lecture, show some homework, look at art
+- Most of the lectures will be working along with me
+
+#### Review
+
+- Functions
+- Variables
+- Any questions in general?
+
 #### Interaction with Processing
 
 - conditionals
@@ -261,7 +277,7 @@ void draw() {
 1. `mousePressed` is another built-in variable. There are many others.
 1. `mousePressed` is a new type of data, namely a `boolean`, which means it has
 	 only one of two values, `true` or `false`
-1. Note that `{` and `}` indicate the blocks
+1. Note that `{` and `}` indicate the blocks, just like with functions
 1. The `else` part of an `if()` statement is optional (what happens if we
 	 remove it?)
 
@@ -324,9 +340,12 @@ void draw() {
 
   int bar; // this is a local variable, visible only inside of draw()
 
-  for (int i = 0; i < width/2; i++) { 
-    // i is a local variable visible only inside this for() loop
-    ellipse(i, height/2, 10,15);
+	int i = 0;
+  while (i < width/2) {
+    // yPosition is a local variable visible only inside this while() loop
+		yPosition = height/2;
+    ellipse(i, yPosition, 10,15);
+		i++;
   }
 }
 ````
@@ -408,7 +427,26 @@ void draw() {
 }
 </pre>
 
-#### `for()` loops (time permitting)
+#### `for()` loops 
+
+````
+int foo;  // this is a global variable, visible in all functions
+void setup() {
+  foo = 7;
+}
+
+void draw() {
+
+  println(foo);
+
+  int bar; // this is a local variable, visible only inside of draw()
+
+  for (int i = 0; i < width/2; i++) { 
+    // i is a local variable visible only inside this for() loop
+    ellipse(i, height/2, 10,15);
+  }
+}
+````
 
 #### Functions with arguments (parameters) and/or return values
 

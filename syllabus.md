@@ -1,5 +1,8 @@
 ## Welcome to DES INV 23: Creative Programming and Electronics
 
+Shortcut to the [current homework assignment](#current-homework-assignment)
+
+
 ### Details 
 
 - Session: D
@@ -338,6 +341,7 @@ Activity
 	- Built-in variables (width, height)
 	- Static vs. active mode
 
+### current-homework-assignment
 Homework (due July 8)
 
 Email Assignment:

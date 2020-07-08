@@ -395,22 +395,70 @@ interesting you discovered.
 
 Activity
 - Conditionals
-- Events (keyboard, mouse)
 - Animation
 - Loops 
-- Arrays
-- Text
-- Random numbers and Perlin noise
+- Functions
+- Transformations
+- Generative art
 
+
+### current-homework-assignment
 Homework (due July 13)
-- Work of art using loops and conditionals
-- Readings (TBA)
+
+Reading Assignment:
+
+- Watch Casey Reas’ Eyeo 
+[talk on chance operations](https://vimeo.com/45851523)
+- Watch this two part
+<a href="https://www.youtube.com/watch?v=o9sgjuh-CBM">(part 1</a>
+and
+<a href="https://www.youtube.com/watch?v=pkHZTWOoTLM">part 2</a>)
+video tutorial on transformations
+- If you are new to functions or want to review, watch Dan
+Shiffman's [functions](https://www.youtube.com/watch?v=XCu7JSkgl04&list=PLRqwX-V7Uu6ajGB2OI3hl5DZsD1Fw1WzR) 
+	tutorials. There are four videos, each less than 10 minutes.
+- Watch at least the first four of Dan shiffman's [Object Oriented
+  Programming](https://www.youtube.com/watch?v=YcbcfkLzgvs&list=PLRqwX-V7Uu6bb7z2IJaTlzwzIg_5yvL4i)
+  tutorials.
+- Look at Dan Shiffman's excellent
+[examples](http://learningprocessing.com/examples/chp14/example-14-02-multiple-translation) of transformations
+
+Production Assignment:
+
+Write a program to create a work of art using loops (either `for()` or
+`while()`), transformations, and/or functions.
+
+For inspiration, here are some examples
+- Sets 01, 02, and 03 from Kuan-Ju Wu's [excellent
+	collection](https://sites.google.com/site/desinv23summer2019/slides).
+	Kuan-Ju often teaches this course.
+- Old issues of Computer Graphics and Art magazines, for examples
+	- [COMPUTER_GRAPHICS_AND_ART_Aug1977](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_Aug1977.pdf)
+	- [ProgrammInformation21_PI21](http://dada.compart-bremen.de/docUploads/ProgrammInformation21_PI21.pdf)
+	- [COMPUTER_GRAPHICS_AND_ART_May1976](http://dada.compart-bremen.de/docUploads/COMPUTER_GRAPHICS_AND_ART_May1976.pdf)
+- In your Github repository, create a new folder named ````July 13````
+	- Upload your program into the new folder, with the extension ````.pde````. 
+	Your
+program should be well commented and organized. If you use any variables,
+chose good names.
+	- Upload a screenshot of your artwork into the new folder
+	- Create a ````README.md```` 
+	in the new folder and include your screenshot in 
+	the ````README.md````.
+	- Describe your inspiration, and include links
+	- Describe the rules you used to create this artwork and 
+	briefly how you programmed this to happen.
+	- Describe any difficulties you had and how you overcame them
+	- Mention anything interesting you discovered while doing this assignment
 
 #### Meeting 3: July 13
 
 Activity
-- Functions
 - Classes
+- Arrays
+- Text
+- Random numbers and Perlin noise
+- Events (keyboard, mouse)
 
 Homework (due July 15)
 - Game or artwork using classes
@@ -421,8 +469,6 @@ Homework (due July 15)
 Activity
 - Sound
 - Images 
-- Transformations
-- Generative art
 - Introduce to midterm project
 
 Homework (due July 20)

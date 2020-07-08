@@ -246,8 +246,10 @@ Static vs. active mode
 Plan for today
 
 - Review
-- Lecture, show some homework, look at art
-- Most of the lectures will be working along with me
+- We have 4 hours together today. So as not to have 4 hours
+of lecture we'll take breaks to look at some of your homework
+and other art 
+- Anyway, during lectures you will be working along with me
 
 #### Review
 
@@ -257,7 +259,7 @@ Plan for today
 
 #### Interaction with Processing
 
-- conditionals
+- conditionals and the `if()` statement
 
 ````
 void setup() {
@@ -274,12 +276,22 @@ void draw() {
 ````
 
 **Important concepts**:
-1. `mousePressed` is another built-in variable. There are many others.
+1. `==` is not the same as `=` and confusing the two
+	is the cause of many hard to find programming errors
+1. Syntax error vs. coding error
+1. `mousePressed` and `true` are more examples of built-in variable. 
+There are many others. (More correctly, `true` is a constant because it can
+not be changed)
 1. `mousePressed` is a new type of data, namely a `boolean`, which means it has
 	 only one of two values, `true` or `false`
 1. Note that `{` and `}` indicate the blocks, just like with functions
 1. The `else` part of an `if()` statement is optional (what happens if we
 	 remove it?)
+
+There are many other [relational
+operators](https://processing.org/reference/).
+One thing they all have in common is that they always yield either `true` or
+`false`.
 
 - Two more interesting built-in variables: `mouseX`, `mouseY`
 	- Using the cursor to draw
@@ -287,6 +299,9 @@ void draw() {
 	- (Time permitting, primitive painting program)
 
 #### Loops
+
+Very often we want things to happen multiple times in some controlled fashion
+
 `while()` is like `if()` but it keeps on doing it as long as condition is true
 
 ````
@@ -301,30 +316,42 @@ void setup() {
   }
 }
 ````
+
 You should always give meaningful names to your variables. What
 is a better name for the variable foo in the example above?
 
-#### Functions
+Another way to make loops is with the `for()` statement:
 
-Every time you use one of the built-in 'commands', you are really using (or
-more properly 'executing') a built-in function. Functions are a very important
-building block of programming, and in addition to using built-in functions,
-you can also create your own. In fact, you've already been doing that, when
-you created the `setup()` and `draw()` functions. In the case of
-`setup()` and `draw()`  you have to use those names, but when you create other
-functions you can make up your own names. Just like variables names , good 
-function names make your programs easier to understand.
+````
+int foo;  // this is a global variable, visible in all functions
 
-Why create your own funtions?
+void setup() {
+  foo = 7;
+}
 
-- Reuse
-- Clarity (remember the three reasons for clarity: yourself, sharing,
-	grading)
-- Easier to debug (what is debugging?)
-	- **Reproduce bug with simplest possible example**
+void draw() {
 
-Let's rewrite the above to use a function
+  println(foo);
 
+  int bar; // this is a local variable, visible only inside of draw()
+
+  for (int i = 0; i < width/2; i++) { 
+    // i is a local variable visible only inside this for() loop
+    ellipse(i, height/2, 10,15);
+  }
+}
+````
+
+The `for()` loop is very similar to the `while()` loop, 
+but it combines the initialization and the increment,
+along with the loop condition, all in one statement.
+
+**Don't let computer scientiests tell you that one is better than 
+the other. Use whichever one makes the most sense to you**. This is
+true for most almost all programming decisions. The cause of most programming
+errors is our own inability to understand what we are telling the computer to
+do. Therefore, the single most important thing we can do is write code that is
+easy for us to understand.
 
 #### Variable Scope
 
@@ -340,7 +367,7 @@ void draw() {
 
   int bar; // this is a local variable, visible only inside of draw()
 
-	int i = 0;
+	int i = 0; // this is also local to the draw() function
   while (i < width/2) {
     // yPosition is a local variable visible only inside this while() loop
 		yPosition = height/2;
@@ -352,8 +379,27 @@ void draw() {
 
 #### Generative Art
 
+What kind of art lends itself to computer programs?
+
 - Sol LeWitt
+	- 'LeWitt’s practice was based primarily within his own intellect,
+		establishing a rubric of formal instructions which his assistants followed
+		to create the works. Some of the artist’s most integral pieces are his
+		Wall Drawings, in which he explored myriad variations of applying drawn
+		lines onto walls. “When an artist uses a conceptual form of art, it means
+		that all of the planning and decisions are made beforehand and the
+		execution is a perfunctory affair. The idea becomes a machine that makes
+		the art,” ' [Artnet](http://www.artnet.com/artists/sol-lewitt/)
+	- LeWitt wrote 
+	[Instructions](https://improvisedlife.com/2015/08/10/learning-stealing-sol-lewitt/) 
+	which were then [executed by others](https://massmoca.org/sol-lewitt/)
 - Casey Reas
+	- Claims that the "core" of his work is "about creating processes not
+		images" From *Point to Pixel: A Genealogy of Digital Aesthetics*, pg. 166
+		(available on Google Books) (The whole chapter "From Op Art to Generative
+		Art", starting on page 99, is very good)
+- So many others
+	[here](https://sites.google.com/site/desinv23summer2019/slides)
 
 #### Motion
 
@@ -432,26 +478,26 @@ void draw() {
 }
 </pre>
 
-#### `for()` loops 
+#### Functions
 
-````
-int foo;  // this is a global variable, visible in all functions
-void setup() {
-  foo = 7;
-}
+Every time you use one of the built-in 'commands', you are really using (or
+more properly 'executing') a built-in function. Functions are a very important
+building block of programming, and in addition to using built-in functions,
+you can also create your own. In fact, you've already been doing that, when
+you created the `setup()` and `draw()` functions. In the case of
+`setup()` and `draw()`  you have to use those names, but when you create other
+functions you can make up your own names. Just like variables names , good 
+function names make your programs easier to understand.
 
-void draw() {
+Why create your own funtions?
 
-  println(foo);
+- Reuse
+- Clarity (remember the three reasons for clarity: yourself, sharing,
+	grading)
+- Easier to debug (what is debugging?)
+	- **Reproduce bug with simplest possible example**
 
-  int bar; // this is a local variable, visible only inside of draw()
-
-  for (int i = 0; i < width/2; i++) { 
-    // i is a local variable visible only inside this for() loop
-    ellipse(i, height/2, 10,15);
-  }
-}
-````
+Let's rewrite the above to use a function
 
 #### Functions with arguments (parameters) and/or return values
 
@@ -502,7 +548,6 @@ void draw() {
 * Use `<CTRL>t` or `<Command>t` to properly indent your code
 * A program that is easier to read and understand is more likely
 to earn a good grade
-
 
 Now, let's create a function that returns something. 
 
@@ -556,7 +601,40 @@ float distance(float x1, float y1, float x2, float y2) {
 * So far we have learned of two data types: `int` and `float`. We have briefly
 	mentioned `boolean` and `long`. A function can return any data type.
 
+
+#### Transformations
+
+<ul>
+ 	<li>Transforms move the canvas so you can draw in different places with the same code</li>
+ 	<li>Available 2D transforms are `translate()`, `rotate()`, and `scale()`. (Why the parenthesis?)</li>
+ 	<li>pushMatrix() and popMatrix() allow you to remember where the canvas was, and then return to it's last position</li>
+</ul>
+Draw a house at a given location, no transform:
+<pre>void house(int x, int y)
+{
+  triangle(x + 15, y, x, y + 15, x + 30, y + 15);
+  rect(x, y + 15, 30, 30);
+  rect(x + 12, y + 30, 10, 15);
+}</pre>
+Same result, but using a transform:
+<pre>void house(int x, int y)
+{
+  pushMatrix();
+  translate(x, y);
+  triangle(15, 0, 0, 15, 30, 15);
+  rect(0, 15, 30, 30);
+  rect(12, 30, 10, 15);
+  popMatrix();
+}
+</pre>
+</ul>
+
+##### Rotation and scaling 
+
+Work through <a href="https://processing.org/tutorials/transform2d/">this</a> tutorial
+
 Time Permitting
 
-- Transformations
-- Classes
+#### Classes
+
+[this](https://github.com/michaelshiloh/simpleProcessingClassExample)

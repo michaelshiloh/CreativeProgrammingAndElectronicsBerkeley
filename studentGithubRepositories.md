@@ -14,3 +14,13 @@ recognize as you.
 - [Josue](https://github.com/ejosue98/CreativeProgrammingAndElectronics.git)
 - [Chearim](https://github.com/chearim/CreativeProgrammingandElectronics)
 - [Ellen](https://github.com/ellenkwok/CreativeProgrammingAndElectronics)
+- [Clarissa](https://github.com/clarissawu24/CreativeProgrammingAndElectronics)
+- [Adyah](https://github.com/adyahrastogi/creativeProgrammingAndElectronics)
+- [Zarah](https://github.com/ztaufique/CreativeProgrammingandElectronics)
+- [Megan](https://github.com/Megan-J/IntroductionToInteractiveMedia)
+- [Alyssa](https://github.com/alyssahagele/CreativeProgrammingAndElectronics)
+- [Norman](https://github.com/chao-norman/CreativeProgrammingAndElectronics)
+- [Kahini](https://github.com/kahinia/CreativeProgrammingAndElectronics)
+- [Divyanshu](https://github.com/DivyanshuBhadoria/CreativeProgrammingAndElectronics)
+- [Santiago](https://github.com/Santiago-0309/CreativeProgramingAndElectronics-)
+

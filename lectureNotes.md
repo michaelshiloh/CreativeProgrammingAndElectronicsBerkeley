@@ -350,6 +350,11 @@ void draw() {
 }
 ````
 
+#### Generative Art
+
+- Sol LeWitt
+- Casey Reas
+
 #### Motion
 
 Let's use make a ball bounce on the floor. First, make a circle move:
@@ -550,3 +555,8 @@ float distance(float x1, float y1, float x2, float y2) {
 	thing could be compound).
 * So far we have learned of two data types: `int` and `float`. We have briefly
 	mentioned `boolean` and `long`. A function can return any data type.
+
+Time Permitting
+
+- Transformations
+- Classes

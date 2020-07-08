@@ -341,7 +341,6 @@ Activity
 	- Built-in variables (width, height)
 	- Static vs. active mode
 
-### current-homework-assignment
 Homework (due July 8)
 
 Email Assignment:

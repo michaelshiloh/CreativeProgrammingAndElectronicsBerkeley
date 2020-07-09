@@ -23,4 +23,6 @@ recognize as you.
 - [Kahini](https://github.com/kahinia/CreativeProgrammingAndElectronics)
 - [Divyanshu](https://github.com/DivyanshuBhadoria/CreativeProgrammingAndElectronics)
 - [Santiago](https://github.com/Santiago-0309/CreativeProgramingAndElectronics-)
-- [Joshua](https://github.com/joshsanchez98/CreativeProgrammingAndElectronics)
+- [Joshua S](https://github.com/joshsanchez98/CreativeProgrammingAndElectronics)
+- [Sean](https://github.com/seansberk/CreativeProgrammingAndElectronics)
+- [Erik](https://github.com/ehansmakes/CreativeProgrammingAndElectronics)

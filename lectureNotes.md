@@ -235,7 +235,6 @@ the difference?
 Static vs. active mode
 
 
-### todays-lecture
 ### 08 July 2020
 
 #### Administration

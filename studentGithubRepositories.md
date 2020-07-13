@@ -26,3 +26,4 @@ recognize as you.
 - [Joshua S](https://github.com/joshsanchez98/CreativeProgrammingAndElectronics)
 - [Sean](https://github.com/seansberk/CreativeProgrammingAndElectronics)
 - [Erik](https://github.com/ehansmakes/CreativeProgrammingAndElectronics)
+- [Ayesha](https://github.com/ayesha-omarali/CreativeProgrammingAndElectronics)

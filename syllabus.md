@@ -401,7 +401,6 @@ Activity
 - Generative art
 
 
-### current-homework-assignment
 Homework (due July 13)
 
 Reading Assignment:
@@ -453,15 +452,21 @@ chose good names.
 #### Meeting 3: July 13
 
 Activity
-- Classes
 - Arrays
+- Classes
 - Text
 - Random numbers and Perlin noise
 - Events (keyboard, mouse)
 
+
+### current-homework-assignment
 Homework (due July 15)
-- Game or artwork using classes
+
+Reading Assignment:
 - Readings (TBA)
+
+Production Assignment:
+- Make a game!
 
 #### Meeting 4: July 15
 

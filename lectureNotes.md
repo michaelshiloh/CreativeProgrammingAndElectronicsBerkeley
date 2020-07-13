@@ -360,7 +360,6 @@ int foo;  // this is a global variable, visible in all functions
 void setup() {
   foo = 7;
 }
-
 void draw() {
 
   println(foo);
@@ -633,8 +632,407 @@ Same result, but using a transform:
 
 Work through <a href="https://processing.org/tutorials/transform2d/">this</a> tutorial
 
-Time Permitting
+
+### todays-lecture
+### 13 July 2020
+
+#### Administration
+
+- Attendance
+- Who is not on Slack?
+- Who is missing from Github?
+- Who has received their Arduino kit?  I hope to start using it
+next week, and I'd like to test it at our next meeting on Wednesday
+
+#### Plan for today
+
+Again we will break up the class a little by looking at some of your
+assignments between lectures
+
+#### Questions/review
+
+- Questions about last week? 
+- Does anyone want me to go over anything?
+- Any particularly difficult problems doing your homework that you could not
+	resolve?
+
+#### Arrays
+
+<pre>
+final int numberOfValues = 10;
+
+int[] values = new int[numberOfValues];
+
+int n = 0;
+while (n < values.length) {
+  values[n] = (n+1)*(n+1);
+  n = n + 1;
+}
+
+for (int i = 0; i < values.length; i++) {
+  println(values[i]);
+}
+</pre>
+
+**Things to notice**
+
+- Just like functions are signified by `()`, arrays are signified by `[]`
+- Arrays can be of any data type, but can't be mixed types
+- `final` keyword
+- `new` keyword
+- Why not just use ten "normal" variables?
+- Arrays and loops (either `for()` or `while()`) almost always show up
+  together. If you use an array, you probably want a loop.
+
+
+A more advanced array example, and introduction to the very useful `map()`
+function:
+
+<pre>
+float[] coswave; 
+
+void setup() {
+  size(900, 300);
+  
+  coswave = new float[width];
+  for (int xPosition = 0; xPosition < width; xPosition++) {
+    coswave[xPosition] = cos(radians(xPosition));
+  }
+  background(255);
+  noLoop();
+}
+
+void draw() {
+  for (int xPosition = 0; xPosition < width; xPosition++) {
+    float waveHeight = map(coswave[xPosition], -1, 1, 0, height);
+    point(xPosition, waveHeight);
+  }
+}
+</pre>
+
+**Things to notice**
+
+* In the previous example, I created the variable that would store the
+array, and created the ten `int`s, all in one line. This time,
+I created the variable that would store the array globally, 
+and then I created the `float` variables inside of `setup()`.
+Either way works; sometimes you will find you have to do it one
+way or the other, but for the most part it's your choice.
+* I used `noLoop()` because this only needed to run once. In fact
+I didn't even need to use `draw()`, 
+I could have put all the action into `setup()`
+* How did I get the height of the wave to perfectly fit the height?
+Practice using the `map()` function, it is incredibly useful
+and works in Arduino also exactly the same way.
+
+
+#### How to add more examples into Processing
+
+For example, from Dan Shiffman's book *Learning Processing*
+
+1. File -> Examples -> Add Examples
+1. type `learning processing` in the search box
+1. select the one we want
+
+Now you can see all examples from the book 
+
+1. File -> Examples -> Contributed Examples
+
+The examples are also online [here](http://learningprocessing.com/examples)
 
 #### Classes
 
 [this](https://github.com/michaelshiloh/simpleProcessingClassExample)
+
+#### Text
+
+<pre>
+String message= "Important message";
+
+void setup() {
+  size(640, 360);
+
+  // What fonts are available?
+  // String[] fontList = PFont.list();
+  // printArray(fontList);
+
+  PFont f = createFont("monaco", 32);
+  textFont(f, 32);
+  color myFavoriteColor =color(255, 0, 0);
+
+  fill(myFavoriteColor);
+  textAlign(CENTER);
+  text(message, width/2, height/2);
+}
+</pre>
+
+**Things to notice**
+
+* New datatype called `PFont`
+* New datatype called `color`
+* `fill()` and `textAlign()` will apply to any further texts or shapes until
+they are changed
+
+Some advanced examples using text are
+[here](https://github.com/aaronsherwood/introduction_interactive_media/tree/master/processingExamples)
+
+
+#### Perlin Noise
+
+````
+void draw() {
+  background(204);
+  float n = random(0, width);
+  line(n, 0, n, height);
+}
+````
+
+What if we wanted the line to move in a more organic, lifelike
+fashion? Organic things (e.g. butterflys, leaves blowing in the wind, clouds) 
+don't jump instantly from one place to another,
+they tend to move close to where they were last time
+
+````
+float offset = 0.0;
+
+void draw() {
+  background(204);
+  offset = offset + .01;
+  float n = noise(offset) * width;
+  line(n, 0, n, height);
+}
+````
+
+Things to notice:
+
+* Why is the variable `offset` global? (Remember our discussion of variable
+	scope)
+
+
+#### Events
+
+````
+final int maxColors = 10;
+color[] myColors = new color[maxColors];
+
+int colorChoice = 0;
+
+void setup() {
+  size(600, 500);
+
+  for (int i = 0; i < myColors.length; i ++ ) {
+    myColors[i]=color(random(255), random(255), random(255));
+  }
+}
+
+void draw() {
+}
+
+void mousePressed() {
+  background(myColors[colorChoice]);
+  colorChoice ++;
+}
+````
+
+Things to notice:
+
+* How does the background change if I never call `mousePressed()`
+`mousePressed()` is a *callback function*, meaning we have told
+Processing that we are interested in this event, and if it occurs,
+call this function. There are many different types of events available in
+Processing, and you register an interest in them by creating a callback
+function with the appropriate name. See *mouse* and *keyboard* 
+in the Processing Reference Page.
+
+* What happens if I click the mouse more than 10 times?
+
+
+#### Time Permitting
+
+#### Working with Images
+
+<strong>PImage</strong>
+<ul>
+ 	<li>Just another class, i.e. it has
+<ul>
+ 	<li>Data (the pixels, width, height, etc.)</li>
+ 	<li>Functionality `(image()`, `get()`, etc.)</li>
+</ul>
+</li>
+</ul>
+
+````
+PImage photo; 
+
+void setup() { 
+  size(700, 700); 
+  photo = loadImage("/home/michael/useForCans.jpeg");
+} 
+
+void draw() { 
+  image(photo, 10, 10);
+	// How do you suppose you might scale the image?
+}
+````
+
+Things to notice
+
+* Get familiar with the error *NullPointerException*
+* If you do not specify a complete path it will look for a folder
+called *data* in the same folder as the sketch
+
+
+`img.get(x,y)` - Gets the color of the pixel at this location
+
+`img.get(x,y,w,h)` - Gets a portion of the image
+
+````
+PImage photo;
+
+void setup() {
+  photo = loadImage("/home/michael/useForCans.jpg");
+
+  size(700, 700);
+
+  image(photo, 10, 10);
+
+  PImage newImage = photo.get(400, 550, 100, 100);
+
+  image (newImage, 50, 50);
+}
+````
+
+Also
+
+````
+image(photo, positionX, positionY, width, height);
+tint(red, green, blue);
+imageMode(CENTER);
+````
+
+Arrays of images
+
+````
+//Example15-3:Swappingimages
+
+int maxImages = 4; // Total # of images
+int imageIndex = 0; // Initial image to be displayed is the first
+
+//Declaring an array of images.
+PImage[] images = new PImage[maxImages]; 
+
+void setup) {
+  size(600, 500);
+
+  // Loading the images into the array
+  // Don't forget to put the JPG files in the data folder!
+  for (int i = 0; i < images.length; i ++ ) {
+    images[i]=loadImage( "/home/michael/img" + i + ".jpg" );
+  }
+}
+
+void raw) {
+  // Displaying one image
+  image(images[imageIndex], 0, 0, width/2, height/2);
+}
+
+void mousePressed) {
+  // A new image is picked randomly when the mouse is clicked
+  // Note the index to the array must be an integer!
+  imageIndex = int(random(images.length));
+}
+````
+
+<strong>Pixels</strong>
+
+You can access individual pixels 
+from the canvas (and whatever is on the canvas)
+using the special built-in array called ````pixels````. 
+Before using it you must load images from the canvas into the ````pixels```` array ````usingloadPixels()````, 
+and after making any changes you must call ````updatePixels()```` 
+to write from the pixels array back to the canvas
+if you want to make changes to the canvas
+
+````
+color pink = color(255, 102, 204);
+
+loadPixels();
+
+// change the first row to pink
+for (int i = 0; i < width; i++) {
+  pixels[i] = pink; 
+}
+
+updatePixels();
+````
+
+the pixels array is one-dimensional, 
+meaning if you want to go to a different row on the canvas 
+you need to offset by that many widths:
+
+````
+color pink = color(255, 102, 204);
+
+loadPixels();
+
+// Change the fifth row to pink
+for (int i = width*5; i < (width + width*5); i++) {
+  pixels[i] = pink;
+}
+
+updatePixels();
+````
+
+It's important to remember that a pixel is just a color (red, green, blue).
+Anything so you can manipulate pixels mathematically 
+e.g. make it fade:
+
+````
+int r = 255;
+int change = -1;
+void setup() {
+  size(500,500);
+}
+
+void draw() {
+
+  color myColor = color(r, 102, 204);
+
+  loadPixels();
+  for (int i = 0; i < width * height; i++) {
+    pixels[i] = myColor;
+  }
+  updatePixels();
+
+  r -= change;
+
+  if (r < 0 || r > 255) {
+    change = -change;
+  }
+}
+
+````
+
+The ````pixels```` [data
+type](https://processing.org/reference/color_datatype.html)
+
+What are some of the things you can do with these tools?
+
+- Print out the color where the mouse is
+- Choose the color where the mouse is and use it for painting
+- Write a simple paint program
+- Draw something that follows the mouse
+- Overlay a grid on an image
+- Take an image and make an artistic collage
+- Access the pixels of an image and for a particular color change that pixel with a pixel from another image (green screen effect)
+- Draw slices of images somewhere else to "glitch" an image
+	- randomly
+	- using the mouse 
+	- using data from a dataset you've downloaded from the web
+
+Some other image functions that might be fun:
+
+- `tint()`
+- `createImage()`
+- `Brightness`
+- `Filter()`

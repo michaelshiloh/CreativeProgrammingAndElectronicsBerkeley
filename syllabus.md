@@ -348,14 +348,6 @@ Email Assignment:
 - Email me a link to your Github repository. Remember the difference
 between a repository and an account.
 
-Preparation Assignment, if you have have received your kit:
-
-- If you had problems uploading the sketch,
-use one of the assistants methods to resolve this
-- Carefully cut the cable tie that holds the bundle of jumper wires together.
-Be very careful not to cut the wires
-or yourself.
-
 Reading Assignment:
 
 - Read [Getting Started with
@@ -462,11 +454,9 @@ Activity
 ### current-homework-assignment
 Homework (due July 15)
 
-Reading Assignment:
-- Readings (TBA)
-
 Production Assignment:
 - Make a game!
+- Upload your game to a new folder called July_15, and document as before
 
 #### Meeting 4: July 15
 
@@ -479,6 +469,14 @@ Homework (due July 20)
 - Generative art using any of sound, images, and/or transformations
 - Start midterm project
 - Readings (TBA)
+
+Preparation Assignment, if you have have received your kit:
+
+- If you had problems uploading the sketch,
+use one of the assistants methods to resolve this
+- Carefully cut the cable tie that holds the bundle of jumper wires together.
+Be very careful not to cut the wires
+or yourself.
 
 #### Meeting 5: July 20
 

@@ -458,15 +458,21 @@ Production Assignment:
 - Make a game!
 - Upload your game to a new folder called July_15, and document as before
 
+Reading Assignment:
+
+- Watch [1.4: Introduction to Computer Vision – Processing
+	Tutorial](https://www.youtube.com/watch?v=h8tk0hmWB44&list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&index=2&t=0s)
+- Watch [11.5: Computer Vision: Color Tracking – Processing
+	Tutorial](https://www.youtube.com/watch?v=nCVZHROb_dE&list=PLRqwX-V7Uu6aG2RJHErXKSWFDXU4qo_ro&index=2)
+
 #### Meeting 4: July 15
 
 Activity
 - Sound
-- Images 
+- Computer Vision
 - Introduce to midterm project
 
 Homework (due July 20)
-- Generative art using any of sound, images, and/or transformations
 - Start midterm project
 - Readings (TBA)
 

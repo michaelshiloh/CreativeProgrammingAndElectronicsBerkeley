@@ -1128,72 +1128,30 @@ or
 </ol>
 <h6>Other concepts</h6>
 <ul>
- 	<li>PImage vs. pixels array</li>
- 	<li>Canvas pixels array vs. image pixels array</li>
  	<li>noise, blobs, averaging, </li>
-
-
-
-
-
-
 </li>
  	<li><code>captureEvent()</code> vs. <code>capture.Available()</code></li>
- 	<li>Remember the importance of setting up the environment: "Background subtraction and brightness thresholding, for example, can fail if the people in the scene are too close in color or brightness to their surroundings. For these algorithms to work well, it is greatly beneficial to prepare physical circumstances which naturally emphasize the contrast between people and their environments. This can be achieved with lighting situations that silhouette the people, for example, or through the use of specially-colored costumes. The frame-differencing technique, likewise, fails to detect people if they are stationary"</li>
- 	<li>Good examples are:
+	<li>Remember the importance of setting up the environment: "Background
+	subtraction and brightness thresholding, for example, can fail if the people
+	in the scene are too close in color or brightness to their surroundings. For
+	these algorithms to work well, it is greatly beneficial to prepare physical
+	circumstances which naturally emphasize the contrast between people and
+	their environments. This can be achieved with lighting situations that
+	silhouette the people, for example, or through the use of specially-colored
+	costumes. The frame-differencing technique, likewise, fails to detect people
+	if they are stationary"
+</li> </li> </ul>
+
+Let's look at some other examples
+
 <ul>
- 	<li>Exercise 16-6: Greenscreen</li>
+ 	<li>Example 16-14: Motion Sensor</li>
+ 	<li>Example 16-13: Motion Pixels</li>
  	<li>Exercise 16-7: Track Motion</li>
  	<li>Example 16-12: Background Removal</li>
- 	<li>Example 16-13: Motion Pixels</li>
- 	<li>Example 16-14: Motion Sensor</li>
+ 	<li>Exercise 16-6: Greenscreen</li>
 </ul>
-</li>
- 	<li>Let's use this last example to do something with what we've located. Let's draw a line at the highest point where motion is detected.
-<ul>
- 	<li>First add a new variable at the top of the draw() function:
-<pre>  // record the Y coordinate of the highest moving pixel. 
-  // Initialize to the lowest value of Y.
-  int highest = video.height-1; 
-</pre>
-</li>
- 	<li>In the for() loop, when motion is detected, see if this motion is higher than the highest recorded motion:
-<pre>    if (diff &gt; threshold) { 
-        // If motion, display black
-        pixels[loc] = color(0);
-        // if this is the highest pixel, record it's position
-        if (y &lt; highest) {
-          highest = y;
-        }
-      }
-</pre>
-</li>
- 	<li>At the end of the draw() function, but before the call to updatePixels(), draw a line at the highest location, and then reset the highest variable for the next frame:
-<pre>// draw a line at the highest pixel
-  lineAt(highest);
-  // reset for next frame
-  highest = video.height-1;</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
- 	<li style="list-style-type: none;">
-<ul>
- 	<li>Finally the function that draws the line:
-<pre>void lineAt(int y) {
-  for (int x = 0; x &lt; width; x++) {
-    pixels[x + y*video.width] = color(255, 0, 0);
-  }
-}
-</pre>
-</li>
-</ul>
-</li>
-</ul>
-
+ 	
 
 Things to notice
 
@@ -1201,9 +1159,8 @@ Things to notice
   this gets you only most of the way. Unfortunately, the work necessary to get
 from 80% to 100% is quite long and complicated. Try to design your projects to
 work with data that is only 80% (or whatever) accurate.
-
-
-In some rare cases you may need too get your camera name. First run this program:
+* In some rare cases you may need too get your camera name. 
+First run this program:
 <pre>import processing.video.*;
 
 void setup() {

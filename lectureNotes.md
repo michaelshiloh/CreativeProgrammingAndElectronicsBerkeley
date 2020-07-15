@@ -1075,6 +1075,26 @@ chp_20_sound -> example_20_02_sound_effect
 - The first example sound file is one that does not work for me. 
 
 
+#### Video
+
+Allows you to playback video from a file on your computer, and
+to use your video camera!
+
+Install the Video library
+
+- Sketch -> Import Library -> Add Library (notice many other library
+	options)
+- Search for Video
+- Install *Video | GStreamer-based video library for Processing*
+
+Test
+
+- File -> Examples -> Contributed Libraries -> Video -> Speed
+- File -> Examples -> Contributed Libraries -> Video -> GettingStartedCapture
+
+If you have trouble, you will need to meet with Gary after class to 
+fix this
+
 #### Computer Vision
 
 **General idea for image tracking**

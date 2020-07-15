@@ -477,12 +477,10 @@ Homework (due July 20)
 - Readings (TBA)
 
 Preparation Assignment, if you have have received your kit:
-
-- If you had problems uploading the sketch,
-use one of the assistants methods to resolve this
 - Carefully cut the cable tie that holds the bundle of jumper wires together.
 Be very careful not to cut the wires
 or yourself.
+- Have kit ready before class starts
 
 #### Meeting 5: July 20
 
@@ -491,6 +489,8 @@ Activity
 
 Homework (due July 22)
 - Midterm project
+- If you had problems uploading the sketch,
+use one of the assistants methods to resolve this
 
 #### Meeting 6: July 22
 

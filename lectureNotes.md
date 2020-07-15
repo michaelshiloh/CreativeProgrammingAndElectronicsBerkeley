@@ -632,7 +632,6 @@ Same result, but using a transform:
 Work through <a href="https://processing.org/tutorials/transform2d/">this</a> tutorial
 
 
-### todays-lecture
 ### 13 July 2020
 
 #### Administration
@@ -1035,3 +1034,210 @@ Some other image functions that might be fun:
 - `createImage()`
 - `Brightness`
 - `Filter()`
+
+
+### todays-lecture
+### 15 July 2020
+
+#### Tabs, files
+
+Has anyone used multiple tabs in your assignments?
+
+#### Libraries
+
+What are libraries?
+
+#### Sound
+
+Install the Sound library
+
+- Open Sketch -> Import Library -> Add Library (notice many other library
+	options)
+- Search for Sound
+- Install *Sound library provided by The Processing Foundation*
+
+Play with examples
+
+- File -> Examples -> Libraries -> Sound -> Oscillators -> SineWave
+- File -> Examples -> Libraries -> Sound -> Effects -> BandPassFilter
+- File -> Examples -> Libraries -> Sound -> Soundfile -> Keyboard
+
+**Notes**
+1. Some soundfiles don't work. I don't know why.
+2. New concept: ````switch()```` statement
+3. ````keyPressed()```` is another example of a ````callback function ````
+
+
+Examples from Learning Processing chapter 20
+
+- File -> Examples -> Contributed Examples -> Learning Processing ->
+chp_20_sound -> example_20_02_sound_effect
+- The first example sound file is one that does not work for me. 
+
+
+#### Computer Vision
+
+<h3>Today's lecture: Computer Vision!</h3>
+<h6>General concepts</h6>
+e.g. in <a href="http://learningprocessing.com/examples/chp16/example-16-11-ColorTrack">ColorTrack</a>
+<ol>
+ 	<li>Add library</li>
+ 	<li>Set up capture device (camera)</li>
+ 	<li>Read from camera (and display if desired)</li>
+ 	<li>loadPixels()</li>
+ 	<li>Loop through pixels
+<pre>for (int x = 0; x &lt; video.width; x ++ ) {
+    for (int y = 0; y &lt; video.height; y ++ ) {
+      int loc = x + y*video.width;
+</pre>
+</li>
+ 	<li>Extract color
+<pre>float r1 = red(currentColor);
+</pre>
+or
+<pre>int currR = (currColor &gt;&gt; 16) &amp; 0xFF;
+</pre>
+</li>
+ 	<li>Calculate distance from whatever we seek
+<pre>float d = dist(r1, g1, b1, r2, g2, b2);
+</pre>
+</li>
+ 	<li>If this pixel is new world record, remember its location
+<pre>if (d &lt; worldRecord) {
+        worldRecord = d;
+        closestX = x;
+        closestY = y;
+      }
+</pre>
+</li>
+ 	<li>Once we're done looking at all the pixels, do whatever we need at the location indicated by the world record</li>
+</ol>
+<h6>Other concepts</h6>
+<ul>
+ 	<li>PImage vs. pixels array</li>
+ 	<li>Canvas pixels array vs. image pixels array</li>
+ 	<li>Running average</li>
+</ul>
+<h6>Install the video library:</h6>
+<ul>
+ 	<li>Sketch -&gt; Import Library -&gt; Add Library</li>
+ 	<li>In the filter box enter "video"</li>
+ 	<li>Select the library called "Video - GStreamer-based video library for Processing"</li>
+ 	<li>To get your camera name first run this program:
+<pre>import processing.video.*;
+
+void setup() {
+
+  String[] cameras = Capture.list();
+
+  if (cameras == null) {
+    println("Could not find list of available cameras, try the default");
+    exit();
+  } else if (cameras.length == 0) {
+    println("There are no cameras available for capture.");
+  } else {
+    println("Available cameras:");
+    printArray(cameras);
+  }
+}
+</pre>
+Test that the camera is working:
+<pre>import processing.video.*; 
+
+Capture video;
+
+void setup() {
+  size(640, 480); // Change size to 320 x 240 if too slow at 640 x 480 
+  video = new Capture(this, width, height, "Integrated Camera: Integrated C");
+  video.start();
+}
+
+void draw() {
+  if (video.available()) {
+    video.read();
+    image(video, 0, 0, width, height); // Draw the webcam video onto the screen
+  }
+}
+</pre>
+With this information, you can add the camera name to the call to the <span style="font-family: 'courier new', courier, monospace;">Capture()</span> constructor in e.g. Golan Levin's Code Listing 1, 2, 3, and 4 (also remove the final 24 and add the call to video.start(), as in the example above):</li>
+</ul>
+<pre>  video = new Capture(this, width, height, "your camera name here");
+  video.start();
+</pre>
+<h6>Install the examples from Daniel Shiffman's book "Learning Processing"</h6>
+<ul>
+ 	<li style="list-style-type: none;">
+<ul>
+ 	<li>Sketch -&gt; Import Library -&gt; Add Library -&gt; Examples tab -&gt; Learning Processing</li>
+ 	<li>Examples will be in File -&gt; Examples -&gt; Contributed Examples -&gt; Learning Processing -&gt; Ch. 16 Video</li>
+ 	<li>As before, add your camera name to the constructor:
+<pre>void setup() {
+  video = new Capture(this, 320, 240, "Integrated Camera: Integrated C");
+  video.start();
+}
+</pre>
+</li>
+ 	<li><code>captureEvent()</code> vs. <code>capture.Available()</code></li>
+ 	<li>Remember the importance of setting up the environment: "Background subtraction and brightness thresholding, for example, can fail if the people in the scene are too close in color or brightness to their surroundings. For these algorithms to work well, it is greatly beneficial to prepare physical circumstances which naturally emphasize the contrast between people and their environments. This can be achieved with lighting situations that silhouette the people, for example, or through the use of specially-colored costumes. The frame-differencing technique, likewise, fails to detect people if they are stationary"</li>
+ 	<li>Good examples are:
+<ul>
+ 	<li>Exercise 16-6: Greenscreen</li>
+ 	<li>Exercise 16-7: Track Motion</li>
+ 	<li>Example 16-11: Color Track</li>
+ 	<li>Example 16-12: Background Removal</li>
+ 	<li>Example 16-13: Motion Pixels</li>
+ 	<li>Example 16-14: Motion Sensor</li>
+</ul>
+</li>
+ 	<li>Let's use this last example to do something with what we've located. Let's draw a line at the highest point where motion is detected.
+<ul>
+ 	<li>First add a new variable at the top of the draw() function:
+<pre>  // record the Y coordinate of the highest moving pixel. 
+  // Initialize to the lowest value of Y.
+  int highest = video.height-1; 
+</pre>
+</li>
+ 	<li>In the for() loop, when motion is detected, see if this motion is higher than the highest recorded motion:
+<pre>    if (diff &gt; threshold) { 
+        // If motion, display black
+        pixels[loc] = color(0);
+        // if this is the highest pixel, record it's position
+        if (y &lt; highest) {
+          highest = y;
+        }
+      }
+</pre>
+</li>
+ 	<li>At the end of the draw() function, but before the call to updatePixels(), draw a line at the highest location, and then reset the highest variable for the next frame:
+<pre>// draw a line at the highest pixel
+  lineAt(highest);
+  // reset for next frame
+  highest = video.height-1;</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+ 	<li style="list-style-type: none;">
+<ul>
+ 	<li>Finally the function that draws the line:
+<pre>void lineAt(int y) {
+  for (int x = 0; x &lt; width; x++) {
+    pixels[x + y*video.width] = color(255, 0, 0);
+  }
+}
+</pre>
+</li>
+</ul>
+</li>
+</ul>
+
+
+Things to notice
+
+* The general principles of computer vision are pretty straightforward, but
+  this gets you only most of the way. Unfortunately, the work necessary to get
+from 80% to 100% is quite long and complicated. Try to design your projects to
+work with data that is only 80% (or whatever) accurate.

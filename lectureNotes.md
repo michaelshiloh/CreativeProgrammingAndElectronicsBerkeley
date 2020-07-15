@@ -1051,10 +1051,10 @@ What are libraries?
 
 Install the Sound library
 
-- Open Sketch -> Import Library -> Add Library (notice many other library
+- Sketch -> Import Library -> Add Library (notice many other library
 	options)
 - Search for Sound
-- Install *Sound library provided by The Processing Foundation*
+- Install *Sound* written by *The Processing Foundation*
 
 Play with examples
 
@@ -1077,9 +1077,23 @@ chp_20_sound -> example_20_02_sound_effect
 
 #### Computer Vision
 
-<h3>Today's lecture: Computer Vision!</h3>
-<h6>General concepts</h6>
-e.g. in <a href="http://learningprocessing.com/examples/chp16/example-16-11-ColorTrack">ColorTrack</a>
+**General idea for image tracking**
+
+* Read in a frame from the video camera 
+* Load the pixels
+* Optionally, display the image from the camera
+* Initialize the "world record" with something really bad that we know we can
+	improve upon
+* Loop through every single pixel in the image, and for each pixel
+	* Calculate the *distance* between the color of this pixel
+	and the color we are looking for
+	* If this pixel is closer than the previous world record,
+	record this pixel as the current world record
+
+For example
+- File -> Examples -> Contributed Examples -> Learning Processing ->
+chp_16_video -> example_16_11_ColorTrack/
+
 <ol>
  	<li>Add library</li>
  	<li>Set up capture device (camera)</li>
@@ -1116,66 +1130,13 @@ or
 <ul>
  	<li>PImage vs. pixels array</li>
  	<li>Canvas pixels array vs. image pixels array</li>
- 	<li>Running average</li>
-</ul>
-<h6>Install the video library:</h6>
-<ul>
- 	<li>Sketch -&gt; Import Library -&gt; Add Library</li>
- 	<li>In the filter box enter "video"</li>
- 	<li>Select the library called "Video - GStreamer-based video library for Processing"</li>
- 	<li>To get your camera name first run this program:
-<pre>import processing.video.*;
+ 	<li>noise, blobs, averaging, </li>
 
-void setup() {
 
-  String[] cameras = Capture.list();
 
-  if (cameras == null) {
-    println("Could not find list of available cameras, try the default");
-    exit();
-  } else if (cameras.length == 0) {
-    println("There are no cameras available for capture.");
-  } else {
-    println("Available cameras:");
-    printArray(cameras);
-  }
-}
-</pre>
-Test that the camera is working:
-<pre>import processing.video.*; 
 
-Capture video;
 
-void setup() {
-  size(640, 480); // Change size to 320 x 240 if too slow at 640 x 480 
-  video = new Capture(this, width, height, "Integrated Camera: Integrated C");
-  video.start();
-}
 
-void draw() {
-  if (video.available()) {
-    video.read();
-    image(video, 0, 0, width, height); // Draw the webcam video onto the screen
-  }
-}
-</pre>
-With this information, you can add the camera name to the call to the <span style="font-family: 'courier new', courier, monospace;">Capture()</span> constructor in e.g. Golan Levin's Code Listing 1, 2, 3, and 4 (also remove the final 24 and add the call to video.start(), as in the example above):</li>
-</ul>
-<pre>  video = new Capture(this, width, height, "your camera name here");
-  video.start();
-</pre>
-<h6>Install the examples from Daniel Shiffman's book "Learning Processing"</h6>
-<ul>
- 	<li style="list-style-type: none;">
-<ul>
- 	<li>Sketch -&gt; Import Library -&gt; Add Library -&gt; Examples tab -&gt; Learning Processing</li>
- 	<li>Examples will be in File -&gt; Examples -&gt; Contributed Examples -&gt; Learning Processing -&gt; Ch. 16 Video</li>
- 	<li>As before, add your camera name to the constructor:
-<pre>void setup() {
-  video = new Capture(this, 320, 240, "Integrated Camera: Integrated C");
-  video.start();
-}
-</pre>
 </li>
  	<li><code>captureEvent()</code> vs. <code>capture.Available()</code></li>
  	<li>Remember the importance of setting up the environment: "Background subtraction and brightness thresholding, for example, can fail if the people in the scene are too close in color or brightness to their surroundings. For these algorithms to work well, it is greatly beneficial to prepare physical circumstances which naturally emphasize the contrast between people and their environments. This can be achieved with lighting situations that silhouette the people, for example, or through the use of specially-colored costumes. The frame-differencing technique, likewise, fails to detect people if they are stationary"</li>
@@ -1183,7 +1144,6 @@ With this information, you can add the camera name to the call to the <span styl
 <ul>
  	<li>Exercise 16-6: Greenscreen</li>
  	<li>Exercise 16-7: Track Motion</li>
- 	<li>Example 16-11: Color Track</li>
  	<li>Example 16-12: Background Removal</li>
  	<li>Example 16-13: Motion Pixels</li>
  	<li>Example 16-14: Motion Sensor</li>
@@ -1241,3 +1201,46 @@ Things to notice
   this gets you only most of the way. Unfortunately, the work necessary to get
 from 80% to 100% is quite long and complicated. Try to design your projects to
 work with data that is only 80% (or whatever) accurate.
+
+
+In some rare cases you may need too get your camera name. First run this program:
+<pre>import processing.video.*;
+
+void setup() {
+
+  String[] cameras = Capture.list();
+
+  if (cameras == null) {
+    println("Could not find list of available cameras, try the default");
+    exit();
+  } else if (cameras.length == 0) {
+    println("There are no cameras available for capture.");
+  } else {
+    println("Available cameras:");
+    printArray(cameras);
+  }
+}
+</pre>
+Test that the camera is working:
+<pre>import processing.video.*; 
+
+Capture video;
+
+void setup() {
+  size(640, 480); // Change size to 320 x 240 if too slow at 640 x 480 
+  video = new Capture(this, width, height, "Integrated Camera: Integrated C");
+  video.start();
+}
+
+void draw() {
+  if (video.available()) {
+    video.read();
+    image(video, 0, 0, width, height); // Draw the webcam video onto the screen
+  }
+}
+</pre>
+With this information, you can add the camera name to the call to the Capture() constructor 
+</ul>
+<pre>  video = new Capture(this, width, height, "your camera name here");
+  video.start();
+</pre>

@@ -469,40 +469,47 @@ Reading Assignment:
 
 Activity
 - Sound
+- Video (movie playback)
 - Computer Vision
-- Introduce to midterm project: One of the following:
-	- Improve your game (or create a new one) with the addition of sound or video
-	- Create some interactive artwork that uses video in some way
 
 Homework (due July 20)
-- Make substantial progress on your midterm project
+
+Production assignment: Midterm project
+
+- For your midterm project, do one of the following:
+	- Improve your game (or create a new one) with the addition of sound or video
+	- Create some interactive artwork that uses video in some way
+- As this is a midterm project, your standard must be higher. 
+	- Smooth interactions
+	- Instructions
+	- Ability to reset without having to restart the program
+	- Well documented
+- Upload your game to a new folder called "midterm"
+	- Document as before
 
 Preparation Assignment, if you have have received your kit:
-- Carefully cut the cable tie that holds the bundle of jumper wires together.
-Be very careful not to cut the wires
-or yourself.
+
 - Have kit ready before class starts on Monday
 
 #### Meeting 5: July 20
 
 Activity
+- Critique midterm project
 - Arduino test
-- Show progress on your midterm project
-- Continue working with help from Tina and myself as necessary (breakout
-	rooms?)
+- As much Arduino as we have time for
 
 Homework (due July 22)
-- Midterm project
 - If you had problems uploading the sketch,
 use one of the assistant methods to resolve this
+- Readings:
+	- Arduino basicis, inputs, outputs, PWM, motor control
+	- Multitasking
 
 #### Meeting 6: July 22
 
 Activity
-- Critique midterm project
 
 Homework (due July 27)
-- Readings (TBA)
 
 #### Meeting 7: July 27
 

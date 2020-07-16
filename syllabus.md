@@ -477,15 +477,16 @@ Homework (due July 20)
 Production assignment: Midterm project
 
 - For your midterm project, do one of the following:
-	- Improve your game (or create a new one) with the addition of sound or video
+	- Improve your game (or create a new one) 
+		- Add sound or video (or both)
+		- Fix any problems you had, or modify the game to not have them
 	- Create some interactive artwork that uses video in some way
-- As this is a midterm project, your standard must be higher. 
+- As this is a midterm project, your standard must be higher:
 	- Smooth interactions
 	- Instructions
 	- Ability to reset without having to restart the program
-	- Well documented
-- Upload your game to a new folder called "midterm"
-	- Document as before
+	- Exceptionally well documented
+- Upload your game and documentation to a new folder called "midterm"
 
 Preparation Assignment, if you have have received your kit:
 

@@ -451,7 +451,6 @@ Activity
 - Events (keyboard, mouse)
 
 
-### current-homework-assignment
 Homework (due July 15)
 
 Production Assignment:
@@ -472,6 +471,7 @@ Activity
 - Video (movie playback)
 - Computer Vision
 
+### current-homework-assignment
 Homework (due July 20)
 
 Production assignment: Midterm project

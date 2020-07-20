@@ -506,9 +506,8 @@ Reading assignment:
   tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
 - [Microcontrollers, the basics](https://itp.nyu.edu/physcomp/lessons/microcontrollers/microcontrollers-the-basics/)
 - [Digital Input & Output](https://itp.nyu.edu/physcomp/lessons/microcontrollers/digital-input-output/)
-[analog output](https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-output)
-- Read about
-[analog Input](https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-input)
+- [Analog Input](https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-input)
+- [Analog output](https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-output)
 - Read or watch at least one of [these](https://github.com/michaelshiloh/resourcesForClasses#arduino-multitasking-resources)
 tutorials about BlinkWithoutDelay.
 

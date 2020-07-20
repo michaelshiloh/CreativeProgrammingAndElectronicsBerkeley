@@ -1430,6 +1430,8 @@ boolean
 		- If using CAD you can't control where the pins are on Arduino
 		- Some devices (e.g. the ultrasonic distance measuring sensor) that have
 			both inputs and outputs
+	- Here is an example of a hand-drawn schematic:
+	![](media/handDrawnScematic)
 
 - When wiring your circuits
 

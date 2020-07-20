@@ -513,19 +513,16 @@ tutorials about BlinkWithoutDelay.
 
 Production assignment:
 
-- If you had problems uploading the sketch,
-use one of the assistant methods to resolve this
-
-- Get information from at least one analog sensor 
-and at least one digital sensor (switch), 
-and use this information to control at least two LEDs, 
+- Get information from the photoresistor (analog sensor)
+and a switch (digital sensor)
+and use this information to control two LEDs, 
 one in a digital fashion and the other in an analog fashion, 
 in some creative way.
+You may use the built-in LED to avoid wiring up a second LED.
 - Document your work in a new folder called July 22
 - In addition to the README.md and your Arduino code, include:
 - Schematic 
-	- Whether computer generated or hand drawn
-	it must be large and clear
+	- Make sure your picture is large enough to read.
 	- Remember what a schematic is and is not
 - A photograph of your project
 

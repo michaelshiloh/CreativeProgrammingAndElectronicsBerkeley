@@ -1036,7 +1036,6 @@ Some other image functions that might be fun:
 - `Filter()`
 
 
-### todays-lecture
 ### 15 July 2020
 
 #### Tabs, files
@@ -1221,3 +1220,271 @@ With this information, you can add the camera name to the call to the Capture() 
 <pre>  video = new Capture(this, width, height, "your camera name here");
   video.start();
 </pre>
+
+
+### todays-lecture
+### 20 July 2020
+
+#### Administration
+
+**Grades**
+
+**Finding problems in hardware and software**
+
+The general problem is that your conceptual model is wrong. 
+You need to find out
+where your conceptual model differs from the program.
+	* Use println() to display values in question, or relevant paths through
+		conditional statements
+	* Use lots of comments in your code, 
+		especially around the area causing trouble.
+		Very often this helps find the flaw in your logic.
+	* Explain in your code clearly what you think should be happening and what
+		instead is happening.
+		Very often this helps find the flaw in your logic.
+
+**Hints for getting help (not just in this class, but in life in general)**
+
+* Never, never ask your technical questions via email or private channel
+	* But if you have a private question you may
+* Make it as easy as possible for me to help you:
+	* First do the steps above
+	* **Never, never, never post screenshots of code**
+		* Why?
+	* Use println() to display values in question, or relevant paths through
+		conditional statements
+	* Use <CMD>T or <CTRL>T to fix indentation before you commit to Github
+	* Post your code on Github
+	* On Slack, explain very clearly
+		* Which file, and around what lines, is the problem
+		* Explain (again) what do you think should be happening 
+			and what is happening instead
+* If you solve a problem that you've posted to Slack, then you should
+post the solution too, so that if someone looks they'll see the answer
+
+#### Midterm project critique
+
+* 4 minutes maximum per student 
+
+#### Arduino
+
+Make sure everything is working
+
+- Upload the Blink example
+- Change the parameter in delay()
+- Upload again and verify that the LED blinks at the new rate
+
+What is going on?
+
+- Code
+- Circuit
+- I/O pins
+
+Let's extend this circuit to the breadboard:
+
+The most confusing part of this lecture will be the solderless breadboard:
+![](media/breadboard.jpg)
+Image courtesy of
+[SparkFun](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
+
+![](media/ArduinoControllingLED_schem.png)
+![](media/ArduinoControllingLED_bb.png)
+
+Let's add a switch
+
+![](media/ArduinoLEDMomentarySwitch_schem.png)
+![](media/ArduinoLEDMomentarySwitch_bb.png)
+
+````
+void setup() {
+  pinMode(8, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(A2, INPUT);
+}
+
+void loop() {
+
+  int switchPosition = digitalRead(A2);
+
+  if (switchPosition == HIGH) {
+    digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(13, LOW);
+  } else  {
+    digitalWrite(8, LOW);    // turn the LED off by making the voltage LOW
+    digitalWrite(13, HIGH);
+  }
+}
+````
+
+Other things you can do:
+
+Add another LED on a different pin
+
+![](media/ArduinoTwoLEDs_schem.png)
+![](media/ArduinoTwoLEDs_bb.png)
+
+Add another switch on a different pin
+
+![](media/ArduinoTwoSwitches_schem.png)
+![](media/ArduinoTwoSwitches_bb.png)
+
+Now write a program that will blink different patterns depending on which
+switch is pressed. You can select up to four patterns. How is that possible?
+
+- How would you add two LEDs on two different outputs?
+- How would you add two switches on two different inputs?
+- How would you select one of four options with only two switches?
+
+#### Analog Input
+
+Build this circuit. Try to follow the schematic and not the breadboard view:
+
+![](media/ArduinoPhotoresistor_schem.png)
+![](media/ArduinoPhotoresistor_bb.png)
+
+- Analog Inputs, `analogRead()`, and (some) sensors go together
+	- This only works on the six analog input pins (A0-A5)
+	- Digital sensors, like a switch, have only one of two values 
+	and so are more suited to a digital input
+
+Do you see a similarity between this circuit and 
+the switch circuit?
+
+An important skill is to recognize **patters**. This pattern is called a
+*voltage divider* and it shows up very often.
+
+Analog sensors can be resistive or not. Resistive sensors all use the same
+voltage divider pattern.
+Note the similarity to the circuit we used for a switch - 
+a switch is also effectively a voltage divider.
+
+#### Analog Output
+
+- Analog Outputs, `analogWrite()`, PWM and (some) actuators go together
+	- This only works on the six PWM pins (3, 5, 6, 9, 10, and 11).
+	- Some actuators, like a solenoid, can be in only one of two states,
+	and so are more suited to a digital output
+
+- Not true analog voltage. PWM = Pulse Width Modulation
+- Works for LEDs and motors
+
+#### Functions that you know from Processing that are useful here:
+- `map()`
+- `constrain()`
+- `if()`
+
+Remember how we used `print()` in Processing to help us find problems in our 
+program? You can do that in Arduino to but the function has a slightly
+different name: `Serial.println()`
+- Must be initialized `Serial.begin()`
+- Can not concatenate strings with the `+` function
+	- Instead, you need multiple calls to `Serial.println()` e.g.:
+
+````
+Serial.print("First value = ");
+Serial.print(firstValue);
+Serial.print(" Second value = ");
+Serial.print(secondValue);
+Serial.println();
+````
+
+#### In-class exercise
+
+1. Use one of the analog sensors to select which of two LEDs lights up
+1. Use one of the analog sensor to control how fast two LEDs alternate
+
+
+#### Data Types
+
+Just like in Processing, there are different data types:
+
+````
+int
+float
+char
+boolean
+````
+
+#### Conventions: Schematics and Wire Colors
+
+- When drawing schematics
+
+	- All **sensors** on the **left**
+	- All **inputs** on the **left** side of the Arduino 
+	- All **actuators** on the **right**
+	- All **outputs** on the **right** side of the Arduino 
+	- There are exceptions e.g.
+		- If using CAD you can't control where the pins are on Arduino
+		- Some devices (e.g. the ultrasonic distance measuring sensor) that have
+			both inputs and outputs
+
+- When wiring your circuits
+
+	- All **5V** connections should use **red** wire, 
+	and don't use red for anything else
+	- All **GND** connections should use **black** wire,
+	and don't use black for anything else
+		- If you run out of black you may either
+			- Color some white cables black with a Sharpie
+			- Dedicate green as an additional black, and then
+			don't use green for anything else either
+	- All other connections can use any other colors
+
+
+**Debugging**
+
+If you want my help solving a problem in your assignment, do the following:
+1. Upload your schematic, code, and 
+the best picture you can take of your breadboard circuit to Github 
+1. Write a message on Slack, describing carefully
+	1. What do you think should be happening
+	1. What instead is happening 
+(basically the same steps as earlier today for software)
+
+#### Sound
+
+**`tone()`**
+
+[Schematic](https://www.arduino.cc/en/Tutorial/ToneMelody)
+[Reference
+page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
+
+**Notes**
+- "Use of the `tone()` function will interfere with PWM output on pins 3 and 11"
+- The `tone()` function is *non-blocking*
+- Arduino supports tabs just like in Processing
+- Arduino has arrays just like in Processing
+
+**Servo motor**
+
+[Schematic](https://www.arduino.cc/en/Tutorial/Knob)
+[Reference
+page](https://www.arduino.cc/en/Reference/Servo)
+
+**Notes**
+- Use of the servo library disables `analogWrite()` (PWM) on pins 9 and 10
+- The `Servo.write()` function is *non-blocking*
+
+#### Blink Without `delay()`
+
+Why do we need this? 
+
+What problem does delay cause? 
+
+For example, how would you
+- Blink LEDs at different rates
+- Blink an LED while playing a tune
+- Play a tune while moving a servo motor
+
+**Whenever we use `delay()` we can't do other things**
+
+[Tutorial](https://www.arduino.cc/en/Tutorial/BlinkWithoutDelay)
+
+So much for blinking. What if we want to move a servo motor at the same time?
+
+Adafruit [Multitasking Tutorial Part
+I](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all)
+
+Play a melody and blink an LED 
+without using `delay()`:
+[toneMelodyAndBlinkWithoutDelay](https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay)

@@ -502,6 +502,7 @@ Activity
 Homework (due July 22)
 
 Reading assignment:
+- Read today's lecture notes because there were some parts I skipped
 - Sparkfun [breadboard
   tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
 - [Microcontrollers, the basics](https://itp.nyu.edu/physcomp/lessons/microcontrollers/microcontrollers-the-basics/)
@@ -510,7 +511,6 @@ Reading assignment:
 - [Analog output](https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-output)
 - Read or watch at least one of [these](https://github.com/michaelshiloh/resourcesForClasses#arduino-multitasking-resources)
 tutorials about BlinkWithoutDelay.
-- Read today's lecture notes because there were some parts I skipped
 
 Production assignment:
 

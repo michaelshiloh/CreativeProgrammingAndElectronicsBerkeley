@@ -1431,7 +1431,7 @@ boolean
 		- Some devices (e.g. the ultrasonic distance measuring sensor) that have
 			both inputs and outputs
 	- Here is an example of a hand-drawn schematic:
-	![](media/handDrawnScematic.jpg)
+	![](media/handDrawnSchematic.jpg)
 
 - When wiring your circuits
 

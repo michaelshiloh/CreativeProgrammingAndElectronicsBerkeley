@@ -1231,7 +1231,7 @@ With this information, you can add the camera name to the call to the Capture() 
 
 **Finding problems in hardware and software**
 
-The general problem is that your conceptual model is wrong. 
+* The general problem is that your conceptual model is wrong. 
 You need to find out
 where your conceptual model differs from the program.
 	* Use println() to display values in question, or relevant paths through
@@ -1253,7 +1253,7 @@ where your conceptual model differs from the program.
 		* Why?
 	* Use println() to display values in question, or relevant paths through
 		conditional statements
-	* Use <CMD>T or <CTRL>T to fix indentation before you commit to Github
+	* Use `<CMD>T` or `<CTRL>T` to fix indentation before you commit to Github
 	* Post your code on Github
 	* On Slack, explain very clearly
 		* Which file, and around what lines, is the problem
@@ -1287,13 +1287,26 @@ The most confusing part of this lecture will be the solderless breadboard:
 Image courtesy of
 [SparkFun](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
 
+Let's add an LED:
+
+This is a schematic:
+
 ![](media/ArduinoControllingLED_schem.png)
+
+This is a **not** schematic:
+
 ![](media/ArduinoControllingLED_bb.png)
 
 Let's add a switch
 
 ![](media/ArduinoLEDMomentarySwitch_schem.png)
 ![](media/ArduinoLEDMomentarySwitch_bb.png)
+
+Things to notice:
+
+* **The switch is not connected to the LED**
+* The LED uses a 330 ohm resistor, while the switch uses a 10k ohm resistor
+* **The switch is not connected to the LED**
 
 ````
 void setup() {

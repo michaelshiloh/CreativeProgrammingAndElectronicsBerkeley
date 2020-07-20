@@ -471,7 +471,6 @@ Activity
 - Video (movie playback)
 - Computer Vision
 
-### current-homework-assignment
 Homework (due July 20)
 
 Production assignment: Midterm project
@@ -499,12 +498,38 @@ Activity
 - Arduino test
 - As much Arduino as we have time for
 
+### current-homework-assignment
 Homework (due July 22)
+
+Reading assignment:
+- Sparkfun [breadboard
+  tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
+- [Microcontrollers, the basics](https://itp.nyu.edu/physcomp/lessons/microcontrollers/microcontrollers-the-basics/)
+- [Digital Input & Output](https://itp.nyu.edu/physcomp/lessons/microcontrollers/digital-input-output/)
+[analog output](https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-output)
+- Read about
+[analog Input](https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-input)
+- Read or watch at least one of [these](https://github.com/michaelshiloh/resourcesForClasses#arduino-multitasking-resources)
+tutorials about BlinkWithoutDelay.
+
+Production assignment:
+
 - If you had problems uploading the sketch,
 use one of the assistant methods to resolve this
-- Readings:
-	- Arduino basicis, inputs, outputs, PWM, motor control
-	- Multitasking
+
+- Get information from at least one analog sensor 
+and at least one digital sensor (switch), 
+and use this information to control at least two LEDs, 
+one in a digital fashion and the other in an analog fashion, 
+in some creative way.
+- Document your work in a new folder called July 22
+- In addition to the README.md and your Arduino code, include:
+- Schematic 
+	- Whether computer generated or hand drawn
+	it must be large and clear
+	- Remember what a schematic is and is not
+- A photograph of your project
+
 
 #### Meeting 6: July 22
 

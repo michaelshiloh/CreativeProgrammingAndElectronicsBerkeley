@@ -510,6 +510,7 @@ Reading assignment:
 - [Analog output](https://itp.nyu.edu/physcomp/lessons/microcontrollers/analog-output)
 - Read or watch at least one of [these](https://github.com/michaelshiloh/resourcesForClasses#arduino-multitasking-resources)
 tutorials about BlinkWithoutDelay.
+- Read today's lecture notes because there were some parts I skipped
 
 Production assignment:
 

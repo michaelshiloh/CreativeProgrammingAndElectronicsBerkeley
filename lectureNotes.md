@@ -1431,7 +1431,7 @@ boolean
 		- Some devices (e.g. the ultrasonic distance measuring sensor) that have
 			both inputs and outputs
 	- Here is an example of a hand-drawn schematic:
-	![](media/handDrawnScematic)
+	![](media/handDrawnScematic.jpg)
 
 - When wiring your circuits
 
@@ -1455,6 +1455,8 @@ the best picture you can take of your breadboard circuit to Github
 	1. What do you think should be happening
 	1. What instead is happening 
 (basically the same steps as earlier today for software)
+
+Wednesday July 22
 
 #### Sound
 

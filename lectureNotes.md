@@ -1466,15 +1466,7 @@ Wednesday July 22
 
 **Simple circuit using Arduino, LED, and Resistor**
 
-The most confusing part of this lecture will be the solderless breadboard:
-![](media/breadboard.jpg)
-Image courtesy of
-[SparkFun](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
-
-Here is how to build the circuit
-
 ![](media/ArduinoPoweringLED_bb.png)
-
 
 **Theory**
 

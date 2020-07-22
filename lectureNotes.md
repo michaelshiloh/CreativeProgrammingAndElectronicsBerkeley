@@ -1606,8 +1606,8 @@ tutorial
 
 **`tone()`**
 
-[Schematic](https://www.arduino.cc/en/Tutorial/ToneMelody)
-[Reference
+- [Schematic](https://www.arduino.cc/en/Tutorial/ToneMelody)
+- [Reference
 page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
 
 **Notes**
@@ -1618,8 +1618,8 @@ page](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/)
 
 **Servo motor**
 
-[Schematic](https://www.arduino.cc/en/Tutorial/Knob)
-[Reference
+- [Schematic](https://www.arduino.cc/en/Tutorial/Knob)
+- [Reference
 page](https://www.arduino.cc/en/Reference/Servo)
 
 

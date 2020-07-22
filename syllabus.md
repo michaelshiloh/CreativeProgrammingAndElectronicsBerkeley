@@ -538,27 +538,19 @@ Homework (due July 27)
 
 Lecture
 - Introduction to Electricity and Microcontrollers
-
-Activity
-- Arduino digital input and output
-- Analog input
-- Blink without delay
-
-Homework (due July 29)
-- Use switches to control blinking LEDs without using delay()
-- Readings (TBA)
-
-#### Meeting 8: July 29
-
-Lecture
 - Pulse Width Modulation (PWM)
-
-Activity
-- Analog output
 - Tone
 - Servo
 - Blocking vs. non-blocking functions
 - Arduino multitasking
+
+Homework (due July 29)
+
+#### Meeting 8: July 29
+
+Lecture
+
+Activity
 
 Homework (due August 3)
 - Musical Instrument

@@ -1588,7 +1588,9 @@ voltage, but we used `analogWrite()` to dim an LED. How did that work?
 This feature can be used to dim LEDs or slow down the speed 
 of a motor
 
-(picture)
+Look at the picture in
+[this](https://www.embedded.com/introduction-to-pulse-width-modulation/) 
+tutorial
 
 - Not true analog voltage. PWM = Pulse Width Modulation
 - Only works for LEDs and motors

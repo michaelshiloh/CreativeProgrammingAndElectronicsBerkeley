@@ -498,7 +498,6 @@ Activity
 - Arduino test
 - As much Arduino as we have time for
 
-### current-homework-assignment
 Homework (due July 22)
 
 Reading assignment:
@@ -530,12 +529,6 @@ You may use the built-in LED to avoid wiring up a second LED.
 
 #### Meeting 6: July 22
 
-Activity
-
-Homework (due July 27)
-
-#### Meeting 7: July 27
-
 Lecture
 - Introduction to Electricity and Microcontrollers
 - Pulse Width Modulation (PWM)
@@ -544,7 +537,40 @@ Lecture
 - Blocking vs. non-blocking functions
 - Arduino multitasking
 
+### current-homework-assignment
+Homework (due July 27)
+
+Reading assignment:
+
+- Arduino [Graph](https://www.arduino.cc/en/Tutorial/Graph)
+	tutorial
+- Arduino [PhysicalPixel](https://www.arduino.cc/en/Tutorial/PhysicalPixel) tutorial
+
+Production assignment:
+
+- Create a sound making instrument using any of the parts in the kit. Your
+	instrument must incorporate
+	- At least two switches
+	- The piezo buzzer
+	- The servo motor
+- Your instrument must be responsive to changes in its controls, meaning
+		that you can not use `delay()` function.
+- Document your project in a new folder called "27July_MusicalInstrument".
+	Your documentation must include:
+	- README.md with 
+		- Description of project
+		- Anything clever or tricky
+		- Problems (if any) and how you overcame them 
+		- Schematic
+		- Link to short video of the instrument being played
+		- Photograph of the instrument
+		- Closeup photograph of the electronics
+
+#### Meeting 7: July 27
+
 Homework (due July 29)
+
+
 
 #### Meeting 8: July 29
 

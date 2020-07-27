@@ -576,6 +576,24 @@ Lecture
 ### current-homework-assignment
 Homework (due July 29)
 
+Production assignment:
+
+(This is not what I mentioned in class - I changed my mind)
+
+Modify one part of your midterm project to use one input from Arduino.
+It may be a switch or any other sensor.
+
+Document your project in the usual way. There is no need for a video.
+
+
+
+#### Meeting 8: July 29
+
+Lecture
+
+Activity
+
+Homework (due August 3)
 Research and prepare a 5-10 minute presentation on an artist or  other
 creative person working in the broadly defined field of Creative Programming
 and Electronics
@@ -588,16 +606,6 @@ and Electronics
 	2020](https://sites.google.com/berkeley.edu/des-inv23-spring2020/home)
 - Upload your presentation to a new folder on your Github page called
 	July_29_Artist_Presentation
-
-
-
-#### Meeting 8: July 29
-
-Lecture
-
-Activity
-
-Homework (due August 3)
 
 #### Meeting 9: August 3
 

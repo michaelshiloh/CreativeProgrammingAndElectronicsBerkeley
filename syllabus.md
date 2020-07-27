@@ -585,7 +585,7 @@ and Electronics
 	[here](https://sites.google.com/site/desinv23/home), 
 	[summer 2019](https://sites.google.com/site/desinv23summer2019/home),
 	[spring
-	2019](https://sites.google.com/berkeley.edu/des-inv23-spring2020/home)
+	2020](https://sites.google.com/berkeley.edu/des-inv23-spring2020/home)
 - Upload your presentation to a new folder on your Github page called
 	July_29_Artist_Presentation
 
@@ -598,24 +598,16 @@ Lecture
 Activity
 
 Homework (due August 3)
-- Musical Instrument
-- Readings (TBA)
 
 #### Meeting 9: August 3
 
 Lecture
-- Current, heat, and damage
-- H-bridge
 
 Activity
-- Motor controller
-- Serial communication
 - Introduce final project
 
 Homework (due August 5)
-- Very simple game using Arduino and Processing
 - Final project proposals
-- Readings (TBA)
 
 #### Meeting 10: August 5
 

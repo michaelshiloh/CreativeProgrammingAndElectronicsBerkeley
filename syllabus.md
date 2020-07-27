@@ -537,7 +537,6 @@ Lecture
 - Blocking vs. non-blocking functions
 - Arduino multitasking
 
-### current-homework-assignment
 Homework (due July 27)
 
 Reading assignment:
@@ -574,6 +573,7 @@ Lecture
 - Designing robust projects
 - Other Arduinos
 
+### current-homework-assignment
 Homework (due July 29)
 
 Research and prepare a 5-10 minute presentation on an artist or  other

@@ -568,7 +568,26 @@ Production assignment:
 
 #### Meeting 7: July 27
 
+Lecture
+- Communication
+- Motors
+- Designing robust projects
+- Other Arduinos
+
 Homework (due July 29)
+
+Research and prepare a 5-10 minute presentation on an artist or  other
+creative person working in the broadly defined field of Creative Programming
+and Electronics
+- Inspiration might come from the list I showed you at the beginning of class 
+	(at the top of the lecture notes). Another good source are the links from
+	Kuan-Ju Wu's version of this class:
+	[here](https://sites.google.com/site/desinv23/home), 
+	[summer 2019](https://sites.google.com/site/desinv23summer2019/home),
+	[spring
+	2019](https://sites.google.com/berkeley.edu/des-inv23-spring2020/home)
+- Upload your presentation to a new folder on your Github page called
+	July_29_Artist_Presentation
 
 
 

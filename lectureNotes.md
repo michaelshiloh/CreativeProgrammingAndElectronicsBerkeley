@@ -1455,7 +1455,6 @@ the best picture you can take of your breadboard circuit to Github
 	1. What instead is happening 
 (basically the same steps as earlier today for software)
 
-### todays-lecture
 Wednesday July 22
 
 #### Administration
@@ -1667,3 +1666,219 @@ Play a melody and blink an LED
 without using `delay()`:
 [toneMelodyAndBlinkWithoutDelay](https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay)
 
+
+### todays-lecture
+Monday July 27
+
+#### Multitasking (continued)
+
+Flicker (i.e simulate a candle) multiple LEDs 
+without using `delay()`:
+[flickerMultipleNoDelay](https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/flickerMultipleNoDelay/flickerMultipleNoDelay.ino)
+
+#### State (continued)
+
+Related is the concept of a system's *state*, 
+and detecting and controlling the
+transition from one state to another. 
+In particular, you might want to detect 
+the moment a switch transitions from off to on
+(as opposed to the entire time it is on)
+
+[State Change Detection](https://www.arduino.cc/en/Tutorial/StateChangeDetection)
+Detecting the change of a value (usually but not always from a sensor)
+is also called *edge detection*
+
+#### Communication
+
+File -> Examples -> Communications -> Graph
+
+How would we use this to e.g. use the potentiometer to control the 
+location of an ellipse?
+(in-class exercise)
+
+What if we want to send more than one value?
+
+File -> Examples -> Communications -> VirtualColorMixer
+
+(Use light sensor and switch instead of 3 potentiometers)
+
+(In class exercise: Use three buttons to select which color channel the
+potentiometer controls)
+
+Can we send from Processing to Arduino?
+
+File -> Examples -> Communications -> PhysicalPixel
+
+What about both directions?
+
+File -> Examples -> Communications -> SerialCallResponseASCII
+
+**What to do if you see NaN**
+
+Remember the principle of robust coding
+
+
+#### DC Motors
+
+Arduino current limitations
+
+Remember I=V/R 
+
+In Arduino, V is always 5V
+
+LEDs have relatively <strong>high</strong> "resistance", 
+and so consume <strong>low</strong> current.
+Motors have relatively <strong>low</strong> "resistance", 
+and so consume <strong>high</strong> current
+
+
+**Current flowing through any resistance causes heat (P = I^2/R)**
+
+**Everything has resistance**
+
+Therefore, where electricity is flowing there will be heat
+
+**Heat causes damage**
+
+Arduino can not protect itself from damaged caused by overheating. 
+It does not <strong>limit</strong> current, 
+it is <strong>damaged</strong> by too much current
+
+The amount of heat a component can withstand before it is damaged 
+is governed, to a large extent, by its size, for two reasons: 
+1. Bigger means it's stronger and less likely to break
+1. Bigger means more surface area so it can get rid of heat
+
+The transistors that make up Arduino are tiny!
+
+![](https://cdn.sparkfun.com/assets/7/a/6/9/c/51c0d009ce395feb33000000.jpg)
+Image courtesy of SparkFun
+
+How many transistors on there? I would guess at least 100,000. An Intel
+processor from my older laptop had 1.3–1.9 billion transistors
+on a piece of silicon about 1/2" x 1/2"
+
+The reason for using the separate Motor Driver is simple:
+
+**It has much bigger transistors**
+
+(It also makes it easier to control both direction and speed, 
+but you could do that with the Arduino alone, 
+it  would just be a little more complicated)
+
+H-bridge (draw this on whiteboard)
+
+Note that you need 4 lines to control this, and note that if you turn
+on the wrong two at the same time you will create a short circuit
+which will very likely damage the weakest path (usually the transistors).
+
+You could build your own H-bridge out of discrete components, but
+it's easier and less expensive to use an integrated
+motor controller or motor driver. Typically these include additional
+features such as preventing short circuits.
+
+Circuit Schematic
+![](media/arduinoSparkFunMotorDriver_schem.jpg)
+
+
+Code
+
+````
+
+const int ain1Pin = 13;
+const int ain2Pin = 12;
+const int pwmAPin = 11;
+
+const int bin1Pin = 8;
+const int bin2Pin = 9;
+const int pwmBPin = 10;
+
+
+void setup() {
+  pinMode(ain1Pin, OUTPUT);
+  pinMode(ain2Pin, OUTPUT);
+  pinMode(pwmAPin, OUTPUT); // not needed really
+}
+
+void loop() {
+  // turn in one direction, full speed
+  Serial.println("full speed");
+  analogWrite(pwmAPin, 255);
+  digitalWrite(ain1Pin, HIGH);
+  digitalWrite(ain2Pin, LOW);
+  // stay here for a second
+  delay(1000);
+
+  // slow down
+  Serial.println("slowing down");
+  int speed = 255;
+  while (speed--) {
+    analogWrite(pwmAPin, speed);
+    delay(20);
+  }
+}
+
+````
+
+#### Designing robust projects
+
+##### Prototyping Shield
+
+If you are making a project for an exhibition, gallery, or museum, you
+most likely should not use a solderless breadboard.
+
+Soldering your circuit to a prototyping shield is much more reliable.
+
+(show)
+
+##### Soldering 
+- Extend wires
+- More reliable connections
+
+Demonstration
+
+Many excellent soldering tutorials, such as
+[this](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering/all) by SparkFun
+
+Don't solder to sensors or modules that have header pins on them. Use headers
+to make a connector or "extension cord".
+
+Demonstration
+
+##### Mounting Arduino and other electronics
+
+- Standoffs
+- Careful with metal screws next to traces on the printed circuit boards
+	(PCBs)
+	- Nylon screws
+- DIN rails
+- Enclosures? 
+	- Dust
+	- Coffee
+	- Heat
+- 
+
+##### Cable management
+
+- Use red for 5V and only for 5V
+- Use black for ground and only for ground
+- Use only other colors for other signals
+- Always leave extra wire coiled up nicely
+- Always use strain relief
+- Use zip ties to keep your wires organized and away from moving parts
+- Use grommets when going through sharp edges (e.g. a whole in a metal box)
+
+##### Power
+
+- Separate power for high current devices such as motors and Neopixels
+- Label all your power supplies
+- Batteries
+
+#### Other Arduinos and Arduino-like things
+
+- Arduino compatibles
+- Arduino derivitives
+- Ardino clones
+- Other boards that are not related to Arduino
+	- Raspberry Pi

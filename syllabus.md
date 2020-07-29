@@ -571,9 +571,7 @@ Lecture
 - Communication
 - Motors
 - Designing robust projects
-- Other Arduinos
 
-### current-homework-assignment
 Homework (due July 29)
 
 Production assignment:
@@ -590,13 +588,19 @@ Document your project in the usual way. There is no need for a video.
 #### Meeting 8: July 29
 
 Lecture
+- Designing robust projects (continued)
+- Other Arduinos
+- Introduce Artist presentation
+- Introduce Final Project
 
 Activity
 
+### current-homework-assignment
 Homework (due August 3)
+
 Research and prepare a 5-10 minute presentation on an artist or  other
-creative person working in the broadly defined field of Creative Programming
-and Electronics
+creative person working in the field of Creative Programming
+and Electronics, defined as broadly as you wish
 - Inspiration might come from the list I showed you at the beginning of class 
 	(at the top of the lecture notes). Another good source are the links from
 	Kuan-Ju Wu's version of this class:

@@ -1667,7 +1667,6 @@ without using `delay()`:
 [toneMelodyAndBlinkWithoutDelay](https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay)
 
 
-### todays-lecture
 Monday July 27
 
 #### Multitasking (continued)
@@ -1832,7 +1831,20 @@ Soldering your circuit to a prototyping shield is much more reliable.
 
 (show)
 
+##### Other Shields
+
+Website that tries to list all [Arduino shields](http://www.shieldlist.org/)
+
+
+### todays-lecture
+Wednesday July 29
+
+##### Prototyping Shield (continued)
+
+Are there any questions about what I did on Monday?
+
 ##### Soldering 
+
 - Extend wires
 - More reliable connections
 
@@ -1840,11 +1852,6 @@ Demonstration
 
 Many excellent soldering tutorials, such as
 [this](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering/all) by SparkFun
-
-Don't solder to sensors or modules that have header pins on them. Use headers
-to make a connector or "extension cord".
-
-Demonstration
 
 ##### Mounting Arduino and other electronics
 
@@ -1862,6 +1869,7 @@ Demonstration
 ##### Cable management
 
 - Use red for 5V and only for 5V
+	- 3.3V systems, or systems with multiple voltages
 - Use black for ground and only for ground
 - Use only other colors for other signals
 - Always leave extra wire coiled up nicely
@@ -1877,8 +1885,28 @@ Demonstration
 
 #### Other Arduinos and Arduino-like things
 
-- Arduino compatibles
-- Arduino derivitives
-- Ardino clones
+What makes an official Arduino
+
+- Arduino Uno compatibles
+	- [Sparkfun Redboard]()
+	- [Adafruit Metro 328](https://www.adafruit.com/product/2488)
+- Arduino Uno derivitives
+	- Adafruit Flora](https://www.adafruit.com/product/659)
+- Ardino Uno clones
+	- [AliExpress](https://www.aliexpress.com/w/wholesale-arduino%20uno.html)
+
+- Other types of Arduinos
+	- What's in my drawer
 - Other boards that are not related to Arduino
 	- Raspberry Pi
+	- Beagleboard
+	- So many more
+
+#### Artist presentations
+
+#### Final Projects
+
+##### If there is interest
+
+How mount the Sparkfun Motor Driver on a prototyping shield
+

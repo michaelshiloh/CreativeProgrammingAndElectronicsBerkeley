@@ -604,7 +604,7 @@ and Electronics, defined as broadly as you wish
 - Inspiration might come from the list I showed you at the beginning of class 
 	(at the top of the lecture notes). Another good source are the links from
 	Kuan-Ju Wu's version of this class:
-	[here](https://sites.google.com/site/desinv23/home), 
+	[spring 2019](https://sites.google.com/site/desinv23/home), 
 	[summer 2019](https://sites.google.com/site/desinv23summer2019/home),
 	[spring
 	2020](https://sites.google.com/berkeley.edu/des-inv23-spring2020/home)

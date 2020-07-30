@@ -598,18 +598,29 @@ Activity
 ### current-homework-assignment
 Homework (due August 3)
 
-Research and prepare a 5-10 minute presentation on an artist or  other
+1. Research and prepare a 5-10 minute presentation on an artist or  other
 creative person working in the field of Creative Programming
 and Electronics, defined as broadly as you wish
-- Inspiration might come from the list I showed you at the beginning of class 
-	(at the top of the lecture notes). Another good source are the links from
-	Kuan-Ju Wu's version of this class:
-	[spring 2019](https://sites.google.com/site/desinv23/home), 
-	[summer 2019](https://sites.google.com/site/desinv23summer2019/home),
-	[spring
-	2020](https://sites.google.com/berkeley.edu/des-inv23-spring2020/home)
-- Upload your presentation to a new folder on your Github page called
-	July_29_Artist_Presentation
+	- Inspiration might come from the list I showed you at the beginning of class 
+		(at the top of the lecture notes). Another good source are the links from
+		Kuan-Ju Wu's version of this class:
+		[spring 2019](https://sites.google.com/site/desinv23/home), 
+		[summer 2019](https://sites.google.com/site/desinv23summer2019/home),
+		[spring
+		2020](https://sites.google.com/berkeley.edu/des-inv23-spring2020/home)
+	- Upload your presentation to a new folder on your Github page called
+		July_29_Artist_Presentation
+
+2. Write a short proposal for your final project. Final project requirements:
+	- Must be creative, broadly defined
+	- Must use Arduino and Processing (i.e. communication)
+		- Exceptions: If your project is sufficiently complex I will allow only
+			Arduino or only Processing
+	- Must be responsive
+		- A person using your project must perceive it to be responding instantly
+	- You may use any resources you can find. You may add items you have at home
+		or wish to purchase, you may use any libraries, examples, 
+		circuits, or parts of code; you may be inspired by projects.
 
 #### Meeting 9: August 3
 

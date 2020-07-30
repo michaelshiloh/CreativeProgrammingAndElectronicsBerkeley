@@ -1910,4 +1910,7 @@ What makes an official Arduino
 
 How mount the Sparkfun Motor Driver on a prototyping shield
 
+[Booklet](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/all)
+of projects using the parts you have
+
 [Back to the top](#Details)

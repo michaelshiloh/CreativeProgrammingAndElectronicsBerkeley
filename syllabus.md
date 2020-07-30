@@ -611,7 +611,8 @@ and Electronics, defined as broadly as you wish
 	- Upload your presentation to a new folder on your Github page called
 		July_29_Artist_Presentation
 
-2. Write a short proposal for your final project. Final project requirements:
+2. Write a first draft of a short proposal for your final project. 
+Final project requirements:
 	- Must be creative, broadly defined
 	- Must use Arduino and Processing (i.e. communication)
 		- Exceptions: If your project is sufficiently complex I will allow only

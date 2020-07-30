@@ -609,7 +609,7 @@ and Electronics, defined as broadly as you wish
 		[spring
 		2020](https://sites.google.com/berkeley.edu/des-inv23-spring2020/home)
 	- Upload your presentation to a new folder on your Github page called
-		Aug_3_Artist_Presentation
+		**Aug_3_Artist_Presentation**
 
 2. Write a first draft of a short proposal for your final project. 
 Final project requirements:
@@ -623,8 +623,8 @@ Final project requirements:
 		or wish to purchase, you may use any libraries, examples, 
 		circuits, or parts of code; you may be inspired by projects.
 	- Upload your draft to a new folder on your Github page called
-		Aug_3_FinalProject
-		in a page called firstDraft.md
+		**Aug_3_FinalProject**
+		in a page called **firstDraft.md**
 
 #### Meeting 9: August 3
 

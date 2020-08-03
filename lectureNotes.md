@@ -1836,7 +1836,6 @@ Soldering your circuit to a prototyping shield is much more reliable.
 Website that tries to list all [Arduino shields](http://www.shieldlist.org/)
 
 
-### todays-lecture
 Wednesday July 29
 
 ##### Prototyping Shield (continued)
@@ -1891,7 +1890,7 @@ What makes an official Arduino
 	- [Sparkfun Redboard]()
 	- [Adafruit Metro 328](https://www.adafruit.com/product/2488)
 - Arduino Uno derivitives
-	- Adafruit Flora](https://www.adafruit.com/product/659)
+	- [Adafruit Flora](https://www.adafruit.com/product/659)
 - Ardino Uno clones
 	- [AliExpress](https://www.aliexpress.com/w/wholesale-arduino%20uno.html)
 
@@ -1906,11 +1905,83 @@ What makes an official Arduino
 
 #### Final Projects
 
-##### If there is interest
 
-How mount the Sparkfun Motor Driver on a prototyping shield
+### todays-lecture
+Monday August 3
 
-[Booklet](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/all)
-of projects using the parts you have
+##### Summer 2020 Jacobs Hall Design Showcase 
+
+- Date: 14 August
+- Our live time slot: 10-11am (9-10pm GST)
+	- During our live time slot, 
+		each student will present 2-3 minutes, 
+		with an additional 2-3 minutes of questions for the entire audience.
+		If there are no questions from the public audience, I encourage
+		some of us from the class to either ask questions or comments
+		on interesting aspects of the project that could be elaborated on
+- Showcase Overview
+	- The virtual Jacobs Design Showcase will be hosted on a 
+		[central Jacobs site](https://jacobsinstitute.berkeley.edu/news/jacobs-spring-design-showcase/)
+	- From this page, 
+		visitors will be able to access the schedule of activities, 
+		as well as external links to content from individual courses and groups.
+	- The Showcase will be promoted as a one-day event on August 14th, 
+		with preloaded content that can be accessed at any time 
+		as well as live events at scheduled times.
+	- The central showcase site will link to each courses' project content 
+		on an outside platform of their choice. 
+		Our course's website will be [this](https://github.com/michaelshiloh/CreativeProgrammingAndElectronicsBerkeley/designShowcase.md)
+- Our responsibilities:
+	- Tuesday, August 11th: 
+		deadline to submit the URL for our course. (Michael)
+		Project content does not need to be completely uploaded yet
+	- Thursday, August 13th by 9am: 
+	Project content should be fully uploaded, 
+	in time for the start of the Showcase. (Each student)
+- Guidelines for URL submission
+	- All links and content must be viewable to the public. (All)
+- Each student must provide
+- An enticing picture of your project with a short paragraph description
+- A video presenting your work and discussing some of your process 
+	or elements of the project, whatever you think is interesting
+- Link to your project page with further documentation and discussion
+
+#### Administration
+
+- [Booklet](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/all)
+of projects for the kits that you were given
+
+#### Artist presentations
+
+#### I2C 
+
+- Overview
+	- Remember that so-called serial (more correctly USART/UART) can only link
+		two devices
+		- One output can go to multiple inputs because inputs
+			don't try to control a wire (more correctly a node),
+			but instead measure it to see what voltage it's at.
+		- On the other hand if two or more
+			outputs are connected together, if one wants to set the
+			voltage at 5V (Arduino HIGH) and the other wants to set
+			it at 0V (Arduino LOW) they can't do that, and in fact
+			one of the outputs will likely be damaged.
+		- However, if your output only goes LOW and never HIGH, it can work
+			- Use a resistor to pull the node HIGH if no output is pulling it LOW
+	- One master, multiple slaves
+	- Each slave has an address
+	- The master initiates communication with a specific slave
+	- I2C uses two wires: DATA and CLOCK
+		- What is a clock?
+	- [Diagram](https://i0.wp.com/dronebotworkshop.com/wp-content/uploads/2019/03/I2C-Bus-Communications.jpeg)
+		Courtesy of Dronebot Workshop, full article
+		[here](https://dronebotworkshop.com/i2c-arduino-arduino/)
+
+- Demonstration: Between two Arduinos
+- Simple I2C devices usually have a fixed address, 
+	or a small number of selectable addresses
+
+
+#### Neopixels
 
 [Back to the top](#Details)

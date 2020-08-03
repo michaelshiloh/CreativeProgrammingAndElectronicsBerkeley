@@ -1917,8 +1917,9 @@ Monday August 3
 		each student will present 2-3 minutes, 
 		with an additional 2-3 minutes of questions for the entire audience.
 		If there are no questions from the public audience, I encourage
-		some of us from the class to either ask questions or comments
-		on interesting aspects of the project that could be elaborated on
+		some of us from the class to either ask questions or make comments
+		on interesting aspects of the project that the presenter 
+		might elaborate on
 - Showcase Overview
 	- The virtual Jacobs Design Showcase will be hosted on a 
 		[central Jacobs site](https://jacobsinstitute.berkeley.edu/news/jacobs-spring-design-showcase/)
@@ -1930,7 +1931,8 @@ Monday August 3
 		as well as live events at scheduled times.
 	- The central showcase site will link to each courses' project content 
 		on an outside platform of their choice. 
-		Our course's website will be [this](https://github.com/michaelshiloh/CreativeProgrammingAndElectronicsBerkeley/designShowcase.md)
+		Our course's website will be
+		[this](https://github.com/michaelshiloh/CreativeProgrammingAndElectronicsBerkeley/blob/master/designShowcase.md)
 - Our responsibilities:
 	- Tuesday, August 11th: 
 		deadline to submit the URL for our course. (Michael)
@@ -1970,6 +1972,8 @@ of projects for the kits that you were given
 			- Use a resistor to pull the node HIGH if no output is pulling it LOW
 	- One master, multiple slaves
 	- Each slave has an address
+		- Simple I2C devices usually have a fixed address, 
+			or a small number of selectable addresses
 	- The master initiates communication with a specific slave
 	- I2C uses two wires: DATA and CLOCK
 		- What is a clock?
@@ -1978,9 +1982,90 @@ of projects for the kits that you were given
 		[here](https://dronebotworkshop.com/i2c-arduino-arduino/)
 
 - Demonstration: Between two Arduinos
-- Simple I2C devices usually have a fixed address, 
-	or a small number of selectable addresses
 
+Super Simple I2C Master
+
+````
+/*
+  Demonstrate use of I2C bus
+  Based on
+  DroneBot Workshop 2019
+  https://dronebotworkshop.com
+*/
+
+// Include Arduino Wire library for I2C
+#include <Wire.h>
+
+// Define Slave I2C Address
+#define SLAVE_ADDR 9
+
+// Define Slave answer size
+#define ANSWERSIZE 1
+
+void setup() {
+  pinMode(A3, INPUT_PULLUP);
+
+  // Initialize I2C communications as Master
+  Wire.begin();
+
+  // Setup serial monitor
+  Serial.begin(9600);
+  Serial.println("I2C Master Demonstration");
+}
+
+void loop() {
+
+  Wire.beginTransmission(SLAVE_ADDR);
+  Wire.write(digitalRead(A3));
+  Wire.endTransmission();
+
+}
+````
+
+Super simple I2C Slave
+
+````
+/*
+  Demonstrate use of I2C bus
+  Based on
+  DroneBot Workshop 2019
+  https://dronebotworkshop.com
+*/
+
+// Include Arduino Wire library for I2C
+#include <Wire.h>
+
+// Define Slave I2C Address
+#define SLAVE_ADDR 9
+
+void setup() {
+
+  pinMode(13, OUTPUT);
+
+  // Initialize I2C communications as Slave
+  Wire.begin(SLAVE_ADDR);
+
+  // Function to run when data received from master
+  Wire.onReceive(receiveEvent);
+
+  // Setup Serial Monitor
+  Serial.begin(9600);
+  Serial.println("I2C Slave Demonstration");
+}
+
+void receiveEvent() {
+
+  // Read if data received
+  if (Wire.available()) {
+    digitalWrite(13, Wire.read());
+  }
+
+}
+
+void loop() {
+  delay(50);
+}
+````
 
 #### Neopixels
 

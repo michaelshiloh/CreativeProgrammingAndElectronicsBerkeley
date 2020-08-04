@@ -595,7 +595,6 @@ Lecture
 
 Activity
 
-### current-homework-assignment
 Homework (due August 3)
 
 1. Research and prepare a 5-10 minute presentation on an artist or  other
@@ -629,12 +628,33 @@ Final project requirements:
 #### Meeting 9: August 3
 
 Lecture
+- I2C
+- Neopixels
 
-Activity
-- Introduce final project
+Artist Presentations
 
+### current-homework-assignment
 Homework (due August 5)
-- Final project proposals
+- Refine your final project proposals
+	- You are welcome to make some changes e.g. following inspiration from the
+		artist presentations in class
+	- You are always welcome to make changes; 
+		it is normal in a project to have new inspiration
+		or to run into difficulties. Obviously drastic changes
+		near the deadline are risky.
+	- Describe your project in more detail, identifying what
+		components you will use. If you plan to make any purchases 
+		do so immediately, even if your plan isn't complete. It is
+		common to have some components after a project that were
+		not used for various reasons. Think of this as inspiration
+		for future projects.
+	- Identify the riskiest part of your project. This might be
+		the area you know least about, or a library you've never used,
+		or something that was not covered in class. 
+		Discuss what you will do immediately to mitigate this risk.
+	- Upload this discussion into a new folder called 
+		**Aug_5_FinalProject**
+		in a page called **secondDraft.md**
 
 #### Meeting 10: August 5
 

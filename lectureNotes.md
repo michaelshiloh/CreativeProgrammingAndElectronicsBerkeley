@@ -2069,6 +2069,12 @@ void loop() {
 
 #### Neopixels
 
+Wednesday August 5
+
+#### Artists presentations from anyone who missed Monday
+
+#### Transistors
+
 #### Relays
 
 #### RGB LEDs

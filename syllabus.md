@@ -635,6 +635,8 @@ Artist Presentations
 
 ### current-homework-assignment
 Homework (due August 5)
+- If you have not already done so, upload your artist presentation
+	into a new folder called **Aug_3_ArtistPresentation**
 - Refine your final project proposals
 	- You are welcome to make some changes e.g. following inspiration from the
 		artist presentations in class

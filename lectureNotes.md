@@ -2073,10 +2073,29 @@ Wednesday August 5
 
 #### Artists presentations from anyone who missed Monday
 
+#### Briefly present projects
+
+Tina and I to provide feedback
+
+#### RGB LEDs
+
+The RGB LED in your kit is actually three LEDs in one package. 
+- All three LEDs have the negative lead (the cathode) connected together
+- The long lead goes to ground
+- Remember that each LED needs its own resistor!
+
+#### Ultrasonic distance measuring sensor
+
+Really just an ultrasonic loudspeaker and an ultrasonic microphone
+- Trig causes sound to go out
+- Echo goes high when sound (echo) is detected
+- Trigger must go high for 10 microseconds
+
+(Time Permitting)
+
 #### Transistors
 
 #### Relays
 
-#### RGB LEDs
 
 [Back to the top](#Details)

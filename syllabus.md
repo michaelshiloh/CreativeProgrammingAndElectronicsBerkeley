@@ -633,7 +633,6 @@ Lecture
 
 Artist Presentations
 
-### current-homework-assignment
 Homework (due August 5)
 - If you have not already done so, upload your artist presentation
 	into a new folder called **Aug_3_ArtistPresentation**
@@ -662,29 +661,30 @@ Homework (due August 5)
 
 Activity
 - Present final project ideas
-- Start working on final projects
-- Readings (TBA)
+
+### current-homework-assignment
 
 Homework (due August 10)
-- Final project 75% done
+- Final project functionally complete (appearance may be incomplete)
 
 #### Meeting 11: August 10
 
 Activity
 - Present final project progress
-- Work on final projects
+- Work on final projects and/or presentation material
 
 Homework (due August 12)
-- Final project functionally complete (appearance may be incomplete)
+- Final project fully complete, with final appearance
+- Prepare your live presentation
+- Video of your recorded presentation (can be the same as the live
+	presentation)
+- Paragraph for the showcase
+- Photograph for the showcase
 
 #### Meeting 12: August 12
 
 Activity
-- Final project dry run
-
-Homework (due August 14)
-- Final project perfect for showcase
-- Practice, practice!
+- Final project critique
 
 #### Jacobs Summer 2020 Design Showcase Friday, August 14th 10-4pm
 

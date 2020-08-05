@@ -2091,6 +2091,8 @@ Really just an ultrasonic loudspeaker and an ultrasonic microphone
 - Echo goes high when sound (echo) is detected
 - Trigger must go high for 10 microseconds
 
+#### Homework for next week
+
 (Time Permitting)
 
 #### Transistors

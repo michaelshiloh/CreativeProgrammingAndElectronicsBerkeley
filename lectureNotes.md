@@ -1906,7 +1906,6 @@ What makes an official Arduino
 #### Final Projects
 
 
-### todays-lecture
 Monday August 3
 
 ##### Summer 2020 Jacobs Hall Design Showcase 
@@ -2069,6 +2068,7 @@ void loop() {
 
 #### Neopixels
 
+### todays-lecture
 Wednesday August 5
 
 #### Artists presentations from anyone who missed Monday

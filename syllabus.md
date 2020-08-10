@@ -684,10 +684,12 @@ Due at 9am (at beginning of class)
 	- Be prepared to present this live presentation in class
 
 Due at 11:59pm (end of day)
-- A video presenting your work and discussing some of your process
-	or elements of the project, whatever you think is interesting. 
-	This can be the same as the live presentation. There is no time limit.
-	This video must be somewhere on the internet .
+- A video presenting your project
+	- Discuss some of your process
+		or elements of the project, whatever you think is interesting. 
+	- This can be the same as the live presentation
+	- There is no time limit
+	- This video must be somewhere on the internet
 - New github folder called "finalProjectSummer2020" to include:
 	- An enticing picture of your project 
 	- A short (2-4 sentences) yet enticing description of your project

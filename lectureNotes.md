@@ -2093,11 +2093,14 @@ Really just an ultrasonic loudspeaker and an ultrasonic microphone
 
 #### Homework for next week
 
-(Time Permitting)
-
 #### Transistors
 
 #### Relays
 
+### todays-lecture
+Monday 10 August 
+
+- Present final project progress
+- Work on final projects and/or presentation material
 
 [Back to the top](#Details)

@@ -676,10 +676,22 @@ Activity
 Homework (due August 12)
 - Final project fully complete, with final appearance
 - Prepare your live presentation
-- Video of your recorded presentation (can be the same as the live
-	presentation)
-- Paragraph for the showcase
-- Photograph for the showcase
+- New github folder called "finalProjectSummer2020" to include
+	- A video presenting your work and discussing some of your process
+		or elements of the project, whatever you think is interesting. 
+		This can be the same as the live presentation. There is no time limit.
+	- An enticing picture of your project 
+	- A short (2-4 sentences) yet enticing description
+	- All the usual documentation:
+		- README.md with 
+			- Description of project (can be the "enticing description" above)
+			- Anything clever or tricky
+			- Problems (if any) and how you overcame them 
+			- Schematic
+			- Photograph of the instrument
+			- Closeup photograph of the electronics
+			- Link to the video
+
 
 #### Meeting 12: August 12
 

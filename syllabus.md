@@ -662,7 +662,6 @@ Homework (due August 5)
 Activity
 - Present final project ideas
 
-### current-homework-assignment
 
 Homework (due August 10)
 - Final project functionally complete (appearance may be incomplete)
@@ -673,33 +672,33 @@ Activity
 - Present final project progress
 - Work on final projects and/or presentation material
 
+### current-homework-assignment
 Homework (due August 12)
 
 Due at 9am (at beginning of class)
 - Final project fully complete, with final appearance
-- Prepare your live presentation
+- Prepare your live presentation:
 	- 2 minutes at most 
 	- Make notes or write an entire script
 	- practice a few times so it goes smoothly
 	- Be prepared to present this live presentation in class
 
 Due at 11:59pm (end of day)
-	- New github folder called "finalProjectSummer2020" to include
-		- A video presenting your work and discussing some of your process
-			or elements of the project, whatever you think is interesting. 
-			This can be the same as the live presentation. There is no time limit.
-		- An enticing picture of your project 
-		- A short (2-4 sentences) yet enticing description
-		- All the usual documentation:
-			- README.md with 
-				- Description of project (can be the "enticing description" above)
-				- Anything clever or tricky
-				- Problems (if any) and how you overcame them 
-				- Schematic
-				- Photograph of the instrument
-				- Closeup photograph of the electronics
-				- Link to the video
-
+- New github folder called "finalProjectSummer2020" to include
+	- A video presenting your work and discussing some of your process
+		or elements of the project, whatever you think is interesting. 
+		This can be the same as the live presentation. There is no time limit.
+	- An enticing picture of your project 
+	- A short (2-4 sentences) yet enticing description
+	- All the usual documentation:
+		- README.md with 
+			- Description of project (can be the "enticing description" above)
+			- Anything clever or tricky
+			- Problems (if any) and how you overcame them 
+			- Schematic
+			- Photograph of the instrument
+			- Closeup photograph of the electronics
+			- Link to the video
 
 #### Meeting 12: August 12
 

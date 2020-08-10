@@ -2068,7 +2068,6 @@ void loop() {
 
 #### Neopixels
 
-### todays-lecture
 Wednesday August 5
 
 #### Artists presentations from anyone who missed Monday

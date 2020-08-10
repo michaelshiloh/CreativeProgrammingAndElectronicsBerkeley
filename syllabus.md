@@ -684,19 +684,20 @@ Due at 9am (at beginning of class)
 	- Be prepared to present this live presentation in class
 
 Due at 11:59pm (end of day)
-- New github folder called "finalProjectSummer2020" to include
-	- A video presenting your work and discussing some of your process
-		or elements of the project, whatever you think is interesting. 
-		This can be the same as the live presentation. There is no time limit.
+- A video presenting your work and discussing some of your process
+	or elements of the project, whatever you think is interesting. 
+	This can be the same as the live presentation. There is no time limit.
+	This video must be somewhere on the internet .
+- New github folder called "finalProjectSummer2020" to include:
 	- An enticing picture of your project 
-	- A short (2-4 sentences) yet enticing description
+	- A short (2-4 sentences) yet enticing description of your project
 	- All the usual documentation:
 		- README.md with 
 			- Description of project (can be the "enticing description" above)
 			- Anything clever or tricky
 			- Problems (if any) and how you overcame them 
 			- Schematic
-			- Photograph of the instrument
+			- Photograph of the project
 			- Closeup photograph of the electronics
 			- Link to the video
 

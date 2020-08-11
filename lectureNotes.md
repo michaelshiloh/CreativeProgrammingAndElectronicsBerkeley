@@ -2109,7 +2109,7 @@ always create a string in Processing:
 
 ````
 /*
-   Communicate Int As String With Handshaking
+   Communicate Int As String With Handshaking (commIntAsStringHandshaking)
 
    Convert an int to a string and send from Processing
    to Arduino, then convert it to back to an int
@@ -2158,7 +2158,8 @@ void waitForProcessing() {
   }
 }
 
-// Processing sketch to accompany receiveStringHandshakingConvertToInt
+// Processing sketch to accompany 
+// Communicate Int As String With Handshaking (commIntAsStringHandshaking)
 
 import processing.serial.*;
 Serial myPort;

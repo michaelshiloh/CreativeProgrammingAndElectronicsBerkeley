@@ -2102,4 +2102,91 @@ Monday 10 August
 - Present final project progress
 - Work on final projects and/or presentation material
 
+Josh's question and research got me thinking about this, and after some
+experimentation I thought it might be useful to share this. Thanks Josh 
+the pointer to the String.toInt() method and a reminder that you can
+always create a string in Processing:
+
+````
+/*
+   Communicate Int As String With Handshaking
+
+   Convert an int to a string and send from Processing
+   to Arduino, then convert it to back to an int
+   with handshaking i.e. each side will only send when the other is ready
+
+   Useful for sending numbers that are bigger than 255 or floating point numbers
+
+   Michael Shiloh
+   11 August 2020
+
+   Based on  Serial Call and Response in ASCII by Tom Igoe
+
+   Note that the String class uses quite a bit of memory
+
+   This works with floats using the String.toFloat() method
+   but note that due to fewer positions after the decimal point in Arduino
+   the result may not be exactly what was sent
+
+*/
+
+void setup() {
+  Serial.begin(9600);
+  waitForProcessing();
+}
+
+void loop() {
+  if (Serial.available() > 0) {
+    String myString = Serial.readStringUntil('\n');
+    int myInt = myString.toInt();
+
+    // For testing, send it back to Processing to see if it's correct
+    Serial.print("Arduino: received [");
+    Serial.print(myInt);
+    Serial.print("]");
+
+    // Always send a new line back to Processing so it will send
+    // the next piece of information
+    Serial.println();
+  }
+}
+
+void waitForProcessing() {
+  while (Serial.available() <= 0) {
+    Serial.println("Arduino is waiting for Processing to start");
+    delay(300);
+  }
+}
+
+// Processing sketch to accompany receiveStringHandshakingConvertToInt
+
+import processing.serial.*;
+Serial myPort;
+
+void setup() {
+
+  // You might need to print the serial list to find your port
+  myPort = new Serial(this, Serial.list()[0], 9600);
+}
+
+void draw() {
+}
+
+void serialEvent(Serial myPort) {
+  String myString = myPort.readStringUntil('\n');
+  if (myString != null) {
+
+    // For testing, to see what we received
+    println(myString);
+
+    // send the next string
+    int myInt = frameCount;
+    myString = str(myInt) + '\n'; // convert int to string
+    print("Processing: sending " + myString);
+    myPort.write(myString);
+  }
+}
+
+````
+
 [Back to the top](#Details)

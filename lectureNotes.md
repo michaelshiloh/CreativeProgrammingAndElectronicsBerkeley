@@ -2096,7 +2096,6 @@ Really just an ultrasonic loudspeaker and an ultrasonic microphone
 
 #### Relays
 
-### todays-lecture
 Monday 10 August 
 
 - Present final project progress
@@ -2185,6 +2184,37 @@ void serialEvent(Serial myPort) {
     myString = str(myInt) + '\n'; // convert int to string
     print("Processing: sending " + myString);
     myPort.write(myString);
+  }
+}
+
+````
+
+### todays-lecture
+Wednesday 12 August 
+
+Here is some code to allow your program to load audio files but not to 
+start running your fancy code until you are ready
+
+````
+
+boolean wait;
+
+void setup() {
+  wait = true;
+  // load sound files, videos, whatever else
+}
+
+void draw() {
+  if (wait) {
+    return;
+  }
+  // println("loop running");
+  // here is where you do your stuff
+}
+
+void keyPressed() {
+  if (key == ' ') {
+    wait = false;
   }
 }
 

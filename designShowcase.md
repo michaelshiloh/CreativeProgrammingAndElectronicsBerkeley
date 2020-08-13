@@ -26,26 +26,21 @@ Norman Chao: My final project is a game/interactive experience called "Sunset Cr
 Josh Mao: Chromesthesia or sound-to-color synesthesia is a type of synesthesia in which sound involuntarily evokes an experience of color, shape, and movement. And while many piano players have hints of this condition, including me, we rarely can fully flesh out the grand multitude of colors that a piano piece creates when we are playing it. I wanted to undertake this project to create a fully functional, piano visualizer that utilizes LEDs to create an artificial "chromesthesia"; by hooking up microphone input to processing and my arduino to a strip of LEDs, I was able to design and engineer an interactive auditory and visual experience that can be enjoyed by professional piano players to beginners who have never touched an instrument before. [Video presentation](https://youtu.be/SFE_4Ii6NKU) or [full project documentation](https://github.com/joshmao/CreativeProgrammingAndElectronics/blob/master/finalProjectSummer2020/README.md) | <img src="https://github.com/joshmao/CreativeProgrammingAndElectronics/raw/master/finalProjectSummer2020/Enticingphoto.png" width="1700">
 Austin Chang: The goal of this project was to focus on creating a full interactive experience using Arduino and Processing. The basic premise is using Arduino to power a vehicle and the OpenCV library on Processing to image processing on a user's face with a webcam. Both are controlled using the WASD keys on a keyboard. Each key press will move the vehicle in a certain direction and also trigger an image change to whatever the webcam picks up. [Video presentation](https://youtu.be/hUqEuiaasZI) or [full project documentation](https://github.com/l0rdf2l/CreativeProgrammingAndElectronics/blob/master/finalProjectSummer2020/README.md) | <img src="https://github.com/l0rdf2l/CreativeProgrammingAndElectronics/raw/master/finalProjectSummer2020/car.jpg" width="1700">
 Ellen Kwok: Has your daily life under a pandemic stress you out? Would you like to look at some fish swimming around and just relax? Enjoy this piece of interactive art where you can sit back and look at Koi fish at home! [Video presentation](https://youtu.be/SAoP1OT3Y-0) or [full project documentation](https://github.com/ellenkwok/CreativeProgrammingAndElectronics/blob/master/finalProjectSummer2020/README.md) | <img src="https://github.com/ellenkwok/CreativeProgrammingAndElectronics/raw/master/finalProjectSummer2020/bright.png" width="1700">
+Kahini Achrekar: Translating a digital canvas to physical interpretation, this art robot combines Processing input and Arduino outputs to create a collaboration between user and robot. With a mouse controlled canvas, the robot moves by interpreting and responding to onscreen motion and applying its own signature as defined by the rules of the program. The robot can accomodate a variety of drawing and painting tools and bridges the realms of digital and physical art. [Video presentation](https://youtu.be/4gvY8byn2T4) or [full project documentation](https://github.com/kahinia/CreativeProgrammingAndElectronics/blob/master/finalProjectSummer2020/README.md) | <img src="https://github.com/kahinia/CreativeProgrammingAndElectronics/raw/master/finalProjectSummer2020/IMG_4468.JPG" width="1700">
 
 
 
-
-
-[Video presentation]() or [full project documentation]() | <img src="" width="1700">
-[Video presentation]() or [full project documentation]() | <img src="" width="1700">
-[Video presentation]() or [full project documentation]() | <img src="" width="1700">
-[Video presentation]() or [full project documentation]() | <img src="" width="1700">
-[Video presentation]() or [full project documentation]() | <img src="" width="1700">
-[Video presentation]() or [full project documentation]() | <img src="" width="1700">
-[Video presentation]() or [full project documentation]() | <img src="" width="1700">
-
-
-
-Kahini Achrekar	10:22 AM
 Chearim Park	10:24 AM
+[Video presentation]() or [full project documentation]() | <img src="" width="1700">
 Josue Esquivel	10:36 AM
+[Video presentation]() or [full project documentation]() | <img src="" width="1700">
 Clarissa Wu	10:38 AM
+[Video presentation]() or [full project documentation]() | <img src="" width="1700">
 Sean Sada	10:40 AM
+[Video presentation]() or [full project documentation]() | <img src="" width="1700">
 Santiago Restrepo	10:42 AM
+[Video presentation]() or [full project documentation]() | <img src="" width="1700">
 Veronica Raga	10:44 AM
+[Video presentation]() or [full project documentation]() | <img src="" width="1700">
 Adyah Rastogi	10:46 AM
+[Video presentation]() or [full project documentation]() | <img src="" width="1700">

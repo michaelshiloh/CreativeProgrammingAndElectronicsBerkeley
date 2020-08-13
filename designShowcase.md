@@ -5,14 +5,13 @@
 Welcome to the design showcase for our class! 
 
 Our live demonstration starts Friday August 14 at 10am (California time)
-at [this](https://berkeley.zoom.us/j/97659283297)  
-Zoom link.
+at [this](https://berkeley.zoom.us/j/97659283297) Zoom link.
 
 You can find out about other course
 showcases [here](https://mailchi.mp/83ae5e569dcd/save-the-date-the-jacobs-summer-design-showcase-2939034?e=f4e9e85faa). 
 (All of the shared links for the schedule will be updated by Friday morning).
 
-This archive will go be available permanently.
+This archive will be available permanently.
 
 You can see all of the students' coursework [here](https://github.com/michaelshiloh/CreativeProgrammingAndElectronicsBerkeley/blob/master/studentGithubRepositories.md), and all of the course
 material [here](https://github.com/michaelshiloh/CreativeProgrammingAndElectronicsBerkeley). Feel free to use this information to learn about programming and electronics, and to make your own projects!
@@ -21,6 +20,7 @@ material [here](https://github.com/michaelshiloh/CreativeProgrammingAndElectroni
 --- | --- 
 [Zarah Taufique](https://github.com/ztaufique/CreativeProgrammingandElectronics/blob/master/finalProjectSummer2020/README.md): In the United States, showering and bathing are the most significant indoor uses of water domestically at a whopping 27%. Access to water is often taken granted, and the Earth's supply of water is rapidly dwindling. Knowing this and from observing my family's water habits, I decided to create a Smart Shower that tracks the amount of time you have to take a shower. | <img src="https://github.com/ztaufique/CreativeProgrammingandElectronics/blob/master/finalProjectSummer2020/smartShowerProduct1.PNG" width="1200" >
 [Megan Ju](https://github.com/Megan-J/IntroductionToInteractiveMedia/blob/master/finalProjectSummer2020/README.md): Have you ever wanted to create something in collaboration with an autonomous robot? This project allows you to control the look and feel of the overall art piece while working with the always roaming robot! Flip the switch, change the lighting, turn the potentiometer or knob, or yell near the computer's microphone to change anything about the piece. Make sure to save it and show all your friends! | <img src="https://github.com/Megan-J/IntroductionToInteractiveMedia/blob/master/finalProjectSummer2020/Title%20photo.JPG" width="1200" >
+Divyanshu Bhadoria My project is a game where you control the growth of a tree. Your goal is to catch as many birds as you can before you reach the top using your two controls, a potentiometer and photoresister. The potentiometer control your angle of growth, while the photoresistor controls your speed. [Video presentation](https://www.youtube.com/watch?v=QloW-mHUXdE) [Full project documentation](https://github.com/DivyanshuBhadoria/CreativeProgrammingAndElectronics/blob/master/finalProjectSummer2020/README.md) | <img src="https://github.com/DivyanshuBhadoria/CreativeProgrammingAndElectronics/raw/master/finalProjectSummer2020/FinalProjectPicture.png" width="1200">
 
 Schedule for the showcase. Individual presentations may start earlier but
 must not end later than indicated times:

@@ -12,8 +12,9 @@ showcases [here](https://mailchi.mp/83ae5e569dcd/save-the-date-the-jacobs-summer
 
 This archive will go be available permanently.
 
-[Joshua Rafael Sanchez](https://github.com/joshsanchez98/CreativeProgrammingAndElectronics/tree/master/finalProjectSummer2020): Sound Experience (sound.exp) dissembles the aspects of a song and transforms them into components of art. Using the tools of Processing coding and Arduino robotics, the project allows the participant to change what they see in front of them with only a click or a slight movement of a part. Use this program with any MP3 file, and see your music come to life! | <img src="https://github.com/joshsanchez98/CreativeProgrammingAndElectronics/blob/master/finalProjectSummer2020/screen4.png" width="1200" >
+[Joshua Rafael Sanchez](https://github.com/joshsanchez98/CreativeProgrammingAndElectronics/tree/master/finalProjectSummer2020/README.md): Sound Experience (sound.exp) dissembles the aspects of a song and transforms them into components of art. Using the tools of Processing coding and Arduino robotics, the project allows the participant to change what they see in front of them with only a click or a slight movement of a part. Use this program with any MP3 file, and see your music come to life! | <img src="https://github.com/joshsanchez98/CreativeProgrammingAndElectronics/blob/master/finalProjectSummer2020/screen4.png" width="1200" >
 --- | --- 
+[Zarah Taufique](https://github.com/ztaufique/CreativeProgrammingandElectronics/blob/master/finalProjectSummer2020/README.md)In the United States, showering and bathing are the most significant indoor uses of water domestically at a whopping 27%. Access to water is often taken granted, and the Earth's supply of water is rapidly dwindling. Knowing this and from observing my family's water habits, I decided to create a Smart Shower that tracks the amount of time you have to take a shower. | <img src="https://github.com/ztaufique/CreativeProgrammingandElectronics/blob/master/finalProjectSummer2020/smartShowerProduct1.PNG" width="1200" >
 more | more 
 
 Schedule for the showcase. Individual presentations may start earlier but

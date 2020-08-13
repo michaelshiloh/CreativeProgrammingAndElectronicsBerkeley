@@ -15,7 +15,8 @@ This archive will go be available permanently.
 [Joshua Rafael
 Sanchez](https://github.com/joshsanchez98/CreativeProgrammingAndElectronics/tree/master/finalProjectSummer2020)
 Sound Experience (sound.exp) dissembles the aspects of a song and transforms them into components of art. Using the tools of Processing coding and Arduino robotics, the project allows the participant to change what they see in front of them with only a click or a slight movement of a part. Use this program with any MP3 file, and see your music come to life!
-[[https://github.com/joshsanchez98/CreativeProgrammingAndElectronics/blob/master/finalProjectSummer2020/screen4.png | height=48px]]
+
+<img src="https://github.com/joshsanchez98/CreativeProgrammingAndElectronics/blob/master/finalProjectSummer2020/screen4.png" width="324" height="324">
 
 
 Schedule for the showcase. Individual presentations may start earlier but

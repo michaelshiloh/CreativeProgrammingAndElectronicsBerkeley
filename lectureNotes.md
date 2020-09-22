@@ -842,8 +842,7 @@ Processing, and you register an interest in them by creating a callback
 function with the appropriate name. See *mouse* and *keyboard* 
 in the Processing Reference Page.
 
-* What happens if I click the mouse more than 10 times?
-
+* What happens if I click the mouse more than 10 times?  
 
 #### Time Permitting
 
